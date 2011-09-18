@@ -14,7 +14,7 @@
     <apex:outputText value="{!MainBody}" escape="false"/>
     </div>
     <!--END MODULECONTAINER-->
-
+<h1>Joe Was here!</h1>
     <div class="spacer"></div>
 
     <div class="clearmb"></div>
