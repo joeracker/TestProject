@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RackConnect</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RackConnects</value>
+    </caseValues>
+    <fields>
+        <help><!-- Device must be an ASA 5510 or higher --></help>
+        <label><!-- ASA Discussion: ASA Model --></label>
+        <name>ASA_Discussion_ASA_Model__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Educated on the complexities of load balancing(proxying required so source identity will be lost) in this solution or load balancing is not required-if load balancing is required, it is best to engage the Escalations team to review the requirements --></help>
+        <label><!-- ASA Discussion: Load Balancing Complex --></label>
+        <name>ASA_Discussion_Load_Balancing_Complex__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Notes --></label>
+        <name>Additional_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloud Data Center --></label>
+        <name>Cloud_Data_Center__c</name>
+        <picklistValues>
+            <masterLabel>DFW</masterLabel>
+            <translation><!-- DFW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LON3</masterLabel>
+            <translation><!-- LON3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORD</masterLabel>
+            <translation><!-- ORD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other/Unknown</masterLabel>
+            <translation><!-- Other/Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cloud Username --></label>
+        <name>Cloud_Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Segment --></label>
+        <name>Current_Segment__c</name>
+        <picklistValues>
+            <masterLabel>Intensive</masterLabel>
+            <translation><!-- Intensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managed</masterLabel>
+            <translation><!-- Managed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managed Colo</masterLabel>
+            <translation><!-- Managed Colo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RES</masterLabel>
+            <translation><!-- RES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dedicated Data Center --></label>
+        <name>Dedicated_Data_Center__c</name>
+        <picklistValues>
+            <masterLabel>DFW</masterLabel>
+            <translation><!-- DFW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IAD</masterLabel>
+            <translation><!-- IAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LON3</masterLabel>
+            <translation><!-- LON3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORD</masterLabel>
+            <translation><!-- ORD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other/Unknown</masterLabel>
+            <translation><!-- Other/Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Device must be running LTM code version 10.2 (or higher) (for new devices, this will already be the case; for existing devices, verify with Network Security). --></help>
+        <label><!-- F5 Discussion: F5 Code Version --></label>
+        <name>F5_Discussion_F5_Code_Version__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customer educated that the solution only handles the creation of Packet Filters for access from Cloud Servers back to the Dedicated environment and does not include auto-scaling or automatically adding a Cloud Server to a load balancer pool --></help>
+        <label><!-- F5 Discussion: Offering Capabilities --></label>
+        <name>F5_Discussion_Offering_Capabilities__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Educated on process for requesting Cloud Connect access control changes-all requests for changes from Cloud to Dedicated and the Internet are submitted via ticket to the Hybrid Hosting Escalations team --></help>
+        <label><!-- F5 and ASA Discussion:Access Req Process --></label>
+        <name>F5_and_ASA_Discussion_Access_Req_Process__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Dedicated environment, Cloud Servers provisioning target (both XenClassic (Linux) and XenServer (Windows)), and Cloud Files target are in the same data center (verify via Cloud Control and Backstage) --></help>
+        <label><!-- F5 and ASA Discussion: Cloud Data Center --></label>
+        <name>F5_and_ASA_Discussion_Cloud_Data_Center__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Educated on the networking changes to each Cloud Server;manually or via a script-customer will receive a config guide at the end of the implementation-will be required to disable the public interface and update the default gateway on the private interface --></help>
+        <label><!-- F5 and ASA Discussion: Cloud Net Changes --></label>
+        <name>F5_and_ASA_Discussion_Cloud_Net_Changes__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Educated on throughput limitations and overall solution throughput limits-private interfaces are limited to 20-140 Mbps based on the size of the instance;overall solution throughput is typically limited by the interface speed on the dedicated net device --></help>
+        <label><!-- F5 and ASA Discussion: Cloud Throughput --></label>
+        <name>F5_and_ASA_Discussion_Cloud_Throughput__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Educated on the requirement to still run a host-based firewall(IPTables or Windows Firewall) on the private interface of each Cloud Servers instance(there is still a broadcast domain which contain other Cloud Servers customers in the same subnet) --></help>
+        <label><!-- F5 and ASA Discussion:Host Based Firewll --></label>
+        <name>F5_and_ASA_Discussion_Host_Bas__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If Managed Colo, Rackspace must retain full support (no customer access) of the network device that will have Cloud Connect configured (either the F5 or the ASA) --></help>
+        <label><!-- F5 and ASA Discussion: Managed Colo --></label>
+        <name>F5_and_ASA_Discussion_Managed_Colo__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Meets minimum deal size requirements (5 servers - either Dedicated or Cloud Servers) or has approval of the Escalations team --></help>
+        <label><!-- F5 and ASA Discussion: Minimum Deal Size --></label>
+        <name>F5_and_ASA_Discussion_Minimum_Deal_Size__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Educated on how NATing/PATing is configured(by default, each Cloud Server will be setup with an outbound PAT on the customer&apos;s firewall, there will be no one-to-one NATs configured for each Cloud Server by default for inbound access) --></help>
+        <label><!-- F5 and ASA Discussion: PATing --></label>
+        <name>F5_and_ASA_Discussion_PATing__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customer educated on support differences between Dedicated environment and Cloud (Cloud offers unmanaged support where the customer is responsible for the patching, monitoring, configuration, and troubleshooting of everything within the Operating System) --></help>
+        <label><!-- F5 and ASA Discussion: Support Levels --></label>
+        <name>F5_and_ASA_Discussion_Support_Levels__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hybrid Offering --></label>
+        <name>Hybrid_Offering__c</name>
+        <picklistValues>
+            <masterLabel>Cloud Connect ASA</masterLabel>
+            <translation><!-- Cloud Connect ASA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud Connect F5</masterLabel>
+            <translation><!-- Cloud Connect F5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud for Enterprises</masterLabel>
+            <translation><!-- Cloud for Enterprises --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Install Base or New Sale --></label>
+        <name>Install_Base_or_New_Sale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- RackConnects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason for Hybrid --></label>
+        <name>Reason_for_Hybrid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Stage --></label>
+        <name>Sales_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution Engineer --></label>
+        <name>Solution_Engineer__c</name>
+    </fields>
+    <layouts>
+        <layout>Hybrid Connect Layout</layout>
+        <sections>
+            <label><!-- Additional Notes --></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You selected ASA from Hybrid Offering field therefore you must enter values in the ASA Model and ASA Load Balancing Complex fields. --></errorMessage>
+        <name>ASA_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You selected F5 from Hybrid Offering field therefore you must enter values in the F5 Code Version and F5 Offering Capabilities fields. --></errorMessage>
+        <name>F5_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You selected F5 or ASA from Hybrid Offering field therefore you must enter values in the in all of the F5 and ASA fields. --></errorMessage>
+        <name>F5_and_ASA_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

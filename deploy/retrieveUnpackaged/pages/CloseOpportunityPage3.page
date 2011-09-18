@@ -1,0 +1,73 @@
+<apex:page standardController="Opportunity" extensions="CloseOpportunityWizard" title="Close Opportunity Wizard" action="{!fetchContactObjects}">
+<apex:form id="AccountForm" title="Close Opportunity Wizard">
+    <apex:pageBlock title="Close Opportunity Wizard (step {!currentStep} of {!lastPage})" >
+        <apex:pageBlockButtons location="bottom"> 
+            <apex:commandButton id="Prior" value="Prior Page" action="{!priorPage}" immediate="true" />
+            <apex:commandButton id="SaveAndNext" value="Save & Next" action="{!SaveAndNext}" />
+            <apex:commandButton id="Cancel" value="Cancel" action="{!Cancel}" />
+        </apex:pageBlockButtons>
+        <apex:pageMessages />
+        <apex:pageBlockSection title="Account Information" columns="2">
+            <apex:outputField id="AccountName" value="{!currentAccount.Name}"/>
+            <apex:outputField id="AccountNum" value="{!currentAccount.CORE_Account_number__c}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Primary Contact Information" columns="2" rendered="{!IF(currentPrimaryContactRole == null,false,true)}" >
+            <apex:outputField id="ContactFirst" value="{!currentPrimaryContactRole.Rackspace_Contact.FirstName}"/>
+            <apex:outputField id="ContactLast" value="{!currentPrimaryContactRole.Rackspace_Contact.LastName}"/>
+            <apex:outputField id="ContactPhone" value="{!currentPrimaryContactRole.Rackspace_Contact.Phone}"/>
+            <apex:outputField id="ContactEmail" value="{!currentPrimaryContactRole.Rackspace_Contact.Email}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Opportunity Information" columns="1">
+            <apex:inputField id="OpptyName" value="{!currentOppty.Name}"/>
+            <apex:inputField id="OpptyCloseDate" value="{!currentOppty.CloseDate}"/>
+            <apex:outputField id="OpptyStage" value="{!currentOppty.StageName}"/>
+            <apex:inputField id="CurrencyIsoCode" value="{!currentOppty.CurrencyIsoCode}" required="{!IF(wizardProperties.Oppty_Currency__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Currency__c <> null,true,false)}" />
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Opportunity Amounts" columns="2">
+            <apex:inputField id="Amount" value="{!currentOppty.Amount}" required="{!IF(wizardProperties.Oppty_Amount__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Amount__c <> null,true,false)}" />
+            <apex:inputField id="Hosting_Fee__c" value="{!currentOppty.Hosting_Fee__c}" required="{!IF(wizardProperties.Oppty_Hosting_Fee__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Hosting_Fee__c <> null,true,false)}" />
+            <apex:inputField id="Mosso_Fees__c" value="{!currentOppty.Mosso_Fees__c}" required="{!IF(wizardProperties.Oppty_Mosso_Fees__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Mosso_Fees__c <> null,true,false)}" />
+            <apex:inputField id="VM_Fees__c" value="{!currentOppty.VM_Fees__c}" required="{!IF(wizardProperties.Oppty_VM_Fees__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_VM_Fees__c <> null,true,false)}" />
+            <apex:inputField id="Slicehost_Fees__c" value="{!currentOppty.Slicehost_Fees__c}" required="{!IF(wizardProperties.Oppty_Slicehost_Fees__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Slicehost_Fees__c <> null,true,false)}" />                       
+            <apex:inputField id="Setup_Fee__c" value="{!currentOppty.Setup_Fee__c}" required="{!IF(wizardProperties.Oppty_Setup_Fee__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Setup_Fee__c <> null,true,false)}" />
+            <apex:inputField id="Cloud_Setup_Fees__c" value="{!currentOppty.Cloud_Setup_Fees__c}" required="{!IF(wizardProperties.Oppty_Cloud_Setup_Fees__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Cloud_Setup_Fees__c <> null,true,false)}" />
+            <apex:inputField id="Exchange_Fee__c" value="{!currentOppty.Exchange_Fee__c}" required="{!IF(wizardProperties.Oppty_Exchange_Fee__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Exchange_Fee__c <> null,true,false)}" />            
+            <apex:inputField id="UNAS_Fees__c" value="{!currentOppty.UNAS_Fees__c}" required="{!IF(wizardProperties.Oppty_UNAS_Fees__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_UNAS_Fees__c <> null,true,false)}" />                            
+            <apex:inputField id="Migration_Fees__c" value="{!currentOppty.Migration_Fees__c}" required="{!IF(wizardProperties.Oppty_Migration_Fees__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Migration_Fees__c <> null,true,false)}" />
+            <apex:inputField id="Service_Fees__c" value="{!currentOppty.Service_Fees__c}" required="{!IF(wizardProperties.Oppty_Service_Fees__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Service_Fees__c <> null,true,false)}" />
+            <apex:inputField id="Service_Fees_MRR__c" value="{!currentOppty.Service_Fees_MRR__c}" required="{!IF(wizardProperties.Oppty_Service_Fees_MRR__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Service_Fees_MRR__c <> null,true,false)}" />
+            </apex:pageBlockSection>
+          
+            <apex:pageBlockSection title="Opportunity Information" columns="2">
+            <apex:inputField id="Final_Opportunity_Type__c" value="{!currentOppty.Final_Opportunity_Type__c}" required="{!IF(wizardProperties.Oppty_Final_Opportunity_Type__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Final_Opportunity_Type__c <> null,true,false)}" />
+            <apex:inputField id="EVA_Grade__c" value="{!currentOppty.EVA_Grade__c}" required="{!IF(wizardProperties.Oppty_EVA_Grade__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_EVA_Grade__c <> null,true,false)}" />
+            <apex:inputField id="Category__c" value="{!currentOppty.Category__c}" required="{!IF(wizardProperties.Oppty_Category__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Category__c <> null,true,false)}" />
+            <apex:inputField id="EVA_Ratio__c" value="{!currentOppty.EVA_Ratio__c}" required="{!IF(wizardProperties.Oppty_EVA_Ratio__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_EVA_Ratio__c <> null,true,false)}" />
+            <apex:inputField id="ContractLength" value="{!currentOppty.Contract_Length__c}" required="{!IF(wizardProperties.Oppty_Contract_Length__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Contract_Length__c <> null,true,false)}" />  
+            <apex:inputField id="C_Deal_Justification__c" value="{!currentOppty.C_Deal_Justification__c}" required="{!IF(wizardProperties.Oppty_C_Deal_Justification__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_C_Deal_Justification__c <> null,true,false)}" />               
+            <apex:inputField id="Territory__c" value="{!currentOppty.Territory__c}" required="{!IF(wizardProperties.Oppty_Territory__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Territory__c <> null,true,false)}" />            
+            <apex:inputField id="Silver_Bullet__c" value="{!currentOppty.Silver_Bullet__c}" required="{!IF(wizardProperties.Oppty_Silver_Bullet__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Silver_Bullet__c <> null,true,false)}" />             
+            <apex:inputField id="Equifax_Grade__c" value="{!currentOppty.Equifax_Grade__c}" required="{!IF(wizardProperties.Oppty_Equifax_Grade__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Equifax_Grade__c <> null,true,false)}" />
+            <apex:inputField id="Credit_Card_ACH__c" value="{!currentOppty.Credit_Card_ACH__c}" required="{!IF(wizardProperties.Oppty_Credit_Card_ACH__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Credit_Card_ACH__c <> null,true,false)}" />
+            <apex:inputField id="DDI__c" value="{!currentOppty.DDI__c}" required="{!IF(wizardProperties.Oppty_DDI__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_DDI__c <> null,true,false)}" />
+            <apex:inputField id="Data_Center__c" value="{!currentOppty.Data_Center__c}" required="{!IF(wizardProperties.Oppty_Data_Center__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Data_Center__c <> null,true,false)}" />
+            <apex:inputField id="Cloud_Username__c" value="{!currentOppty.Cloud_Username__c}" required="{!IF(wizardProperties.Oppty_Cloud_Username__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Cloud_Username__c <> null,true,false)}" />  
+            <apex:inputField id="Prepay_Amount__c" value="{!currentOppty.Prepay_Amount__c}" required="{!IF(wizardProperties.Oppty_Prepay_Amount__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Prepay_Amount__c <> null,true,false)}" />
+            <apex:inputField id="Ticket_Number__c" value="{!currentOppty.Ticket_Number__c}" required="{!IF(wizardProperties.Oppty_Ticket_Number__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Ticket_Number__c <> null,true,false)}" />
+            <apex:inputField id="Additional_Products__c" value="{!currentOppty.Additional_Products__c}" required="{!IF(wizardProperties.Oppty_Additional_Prods__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Additional_Prods__c <> null,true,false)}" />
+            <apex:inputField id="Overlay_Products__c" value="{!currentOppty.Overlay_Products__c}" required="{!IF(wizardProperties.Oppty_Overlay_Prods__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Overlay_Prods__c <> null,true,false)}" />
+           
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Professional Services" columns="2">
+            <apex:inputField id="Practice_Area__c" value="{!currentOppty.Practice_Area__c}" required="{!IF(wizardProperties.Oppty_Practice_Area__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Practice_Area__c <> null,true,false)}" />            
+            <apex:inputField id="Service_Offering__c" value="{!currentOppty.Service_Offering__c}" required="{!IF(wizardProperties.Oppty_Service_Offering__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Service_Offering__c <> null,true,false)}" />           
+            
+            <apex:outputLabel />
+            <apex:inputField id="Sales_Opportunity__c" value="{!currentOppty.Sales_Opportunity__c}" required="{!IF(wizardProperties.Oppty_Sales_Opportunity__c = 'Required',true,false)}" rendered="{!IF(wizardProperties.Oppty_Sales_Opportunity__c <> null,true,false)}" />
+            </apex:pageBlockSection>
+   
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

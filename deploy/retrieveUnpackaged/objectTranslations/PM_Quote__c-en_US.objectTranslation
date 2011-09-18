@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PM Quote</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PM Quotes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Is Phased Deployment --></label>
+        <name>Is_Phased_Deployment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Primary --></label>
+        <name>Is_Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- PM Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PM Contract Length --></label>
+        <name>PM_Contract_Length__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Delayed Deployment --></label>
+        <name>PM_Delayed_Deployment__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Discount % --></label>
+        <name>PM_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM MRR --></label>
+        <name>PM_MRR__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM One-Time Fee --></label>
+        <name>PM_One_Time_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Pricing --></label>
+        <name>PM_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Quote Id --></label>
+        <name>PM_Quote_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Setup Fee --></label>
+        <name>PM_Setup_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Silver Bullet --></label>
+        <name>Silver_Bullet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strategic Deal --></label>
+        <name>Strategic_Deal__c</name>
+    </fields>
+    <layouts>
+        <layout>PM Quote Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

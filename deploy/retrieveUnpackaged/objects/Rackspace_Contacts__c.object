@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Account Contact Roles   - Used for the Account  Contact Roles</description>
+    <enableActivities>false</enableActivities>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Account_Roles_Production_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Used for CI integration</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Used for CI integration</inlineHelpText>
+        <label>Account Roles Production Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Mark_for_Deletion__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Use this to have a contact role removed from the account.</description>
+        <externalId>false</externalId>
+        <label>Mark for Deletion</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NPS_Decision_Maker__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This is used to send the NPS Survey to the decision maker of the account.  The contact does not have to be available for access to the account.  Be sure to select NPS Contact ONLY as the drop down role column if they should not have access to the account.</inlineHelpText>
+        <label>NPS Decision Maker</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NPS_INT_Business_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This is used to send the NPS Survey to the business contact of the account. The contact does not have to be available for access to the account. Be sure to select NPS Contact ONLY as the drop down role column if they should not have access to the account.</inlineHelpText>
+        <label>NPS INT Business Contact</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NPS_MGD_Billing_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This is used to send the NPS Survey to the billing contact of the account. The contact does not have to be available for access to the account. Be sure to select NPS Contact ONLY as the drop down role column if they should not have access to the account.</inlineHelpText>
+        <label>NPS MGD Billing Contact</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NPS_Survey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes the contacts that will receive the NPS Survey from EMEA.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the contacts that will receive the NPS Survey from EMEA.</inlineHelpText>
+        <label>EMEA NPS Survey</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NPS_Technical_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This is used to send the NPS Survey to the technical contact of the account. The contact doesn&apos;t have to be available for access to the account. Be sure to select NPS Contact ONLY as the drop down role column if they should not have access to the account.</inlineHelpText>
+        <label>NPS Technical Contact</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NPS__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(NPS_Decision_Maker__c, 1, 0) + if( NPS_INT_Business_Contact__c, 1, 0) + if( NPS_MGD_Billing_Contact__c, 1, 0) + if( NPS_Technical_Contact__c, 1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NPS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Decision_Maker__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to denote the primary decision maker on the account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to denote the primary decision maker on the account.</inlineHelpText>
+        <label>Primary Decision Maker</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rackspace_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Rackspace Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Rackspace</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <trackHistory>true</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Rackspace_Contact__c</fullName>
+        <description>Lookup for the contact that needs a role with this company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to lookup the contact to associate to the company.</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Account Contact Roles</relationshipLabel>
+        <relationshipName>Rackspace</relationshipName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Abuse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Administrative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NPS Contact ONLY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner Primary Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Primary Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchaser</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reviewer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technical Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technical</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ticket_Notify__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Ticket Notify</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>syscontactid__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Jim Salinas requested unique contraint.</description>
+        <externalId>false</externalId>
+        <label>syscontactid</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Account Contact Roles</label>
+    <nameField>
+        <displayFormat>RS-{0000}</displayFormat>
+        <label>Rackspace Contacts Id</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Account Contact Roles</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Rackspace_Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Rackspace_Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Role__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>Rackspace_Account__c</searchFilterFields>
+        <searchFilterFields>Rackspace_Contact__c</searchFilterFields>
+        <searchFilterFields>Role__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Only_allow_one_primary_contact</fullName>
+        <active>false</active>
+        <description>Only allows one primary contact.</description>
+        <errorConditionFormula>AND(Rackspace_Account__r.Primary_Count__c &gt;=1,  ISPICKVAL(Role__c, &apos;Primary Contact&apos;))</errorConditionFormula>
+        <errorDisplayField>Role__c</errorDisplayField>
+        <errorMessage>You can only have one Primary Contact on an account. Please edit or mark the existing Primary Contact for deletion.</errorMessage>
+    </validationRules>
+</CustomObject>

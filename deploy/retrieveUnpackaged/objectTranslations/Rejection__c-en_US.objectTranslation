@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rejection</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rejections</value>
+    </caseValues>
+    <fields>
+        <help><!-- This is the max number of rejections allowed for this user. --></help>
+        <label><!-- Quota --></label>
+        <name>Quota__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the number of rejections that have been used by the rep. --></help>
+        <label><!-- Total --></label>
+        <name>Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Rejections --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>Rejection Name</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,64 @@
+<apex:page standardController="PRM_Page__c" extensions="contentCtrl" sidebar="false" showheader="false">
+    <script>
+        function fileDL(attID){
+            window.open('/servlet/servlet.FileDownload?file=' + attID);
+        }
+    </script>
+    <style>
+        .bPageBlock, .individualPalette .bPageBlock {
+          background-color: #FFFFFF;
+          border: 0px solid #C1C1C1;
+        }
+    </style>
+
+    <br/><br/>
+    <apex:outputPanel rendered="{!NOT(ISNULL(prmContent))}">
+        <div>
+    
+           <span style="font-family: Georgia,Palatino,Palatino Linotype,Times,Times New Roman,serif; font-size:28px; color:#4C92E2">{!prmContent.Page_Category__c} </span>
+           <span style="font-family: Georgia,Palatino,Palatino Linotype,Times,Times New Roman,serif; font-size:22px; color:#666666">/ {!prmContent.Page_Subcategory__c}</span>
+        
+           <br/><br/>    
+           <img src="{!$Resource.hr}" />
+           <br/><br/>    
+           
+           <table width="100%">
+                <tr>
+                    <td style="float: left; width: 500px;">
+                    
+                        <span style="font-weight: normal; font-size: 20px; margin-bottom: 10px; color: #666666; line-height: 24px;">
+                          {!prmContent.Subject__c}
+                        </span>
+                                
+                        <apex:pageBlock >
+                            <apex:outputField value="{!prmContent.Content__c}" />
+                            <br/><br/>    
+                            <span style="font-weight: normal; font-size: 20px; margin-bottom: 10px; color: #666; line-height: 24px;">
+                               {!prmContent.Links_Title__c}
+                            </span>
+                    
+                            <apex:pageBlockTable value="{!attList}" rendered="{!NOT(ISNULL(attList))}" var="att">
+                                <apex:column headerValue="Name">
+                                    <apex:outputLink value="javascript: fileDL('{!att.id}');">{!att.Name}</apex:outputLink>
+                                </apex:column>
+                                <apex:column headerValue="Date">
+                                    <apex:outputField value="{!att.CreatedDate}"></apex:outputField>
+                                </apex:column>
+                            </apex:pageBlockTable>
+                        </apex:pageBlock>
+                    </td>
+                    <td style="vertical-align: top;">
+                        <apex:include pageName="contentSideBar"></apex:include>
+                    </td>
+           </tr>
+           </table>
+      </div>
+    </apex:outputPanel>
+    <apex:outputPanel rendered="{!ISNULL(prmContent)}">
+        <img src="{!$Resource.hr}" />
+        <span style="font-family: Georgia,Palatino,Palatino Linotype,Times,Times New Roman,serif; font-size:22px; color:#FF0000">
+            The requested page is not available. Sorry for the inconvenience.
+        </span>
+        <img src="{!$Resource.hr}" />
+    </apex:outputPanel>
+</apex:page>

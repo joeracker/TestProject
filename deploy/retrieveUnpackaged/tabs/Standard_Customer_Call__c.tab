@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <description>This object was created to capture various customer calls made by the Support team. A new record type will be created to support all of the standard call templates currently being used.</description>
+    <mobileReady>false</mobileReady>
+    <motif>Custom61: Castle</motif>
+</CustomTab>

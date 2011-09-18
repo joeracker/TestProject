@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Specific set of strategies tied to each account that the sales manager needs to executive.  Each strategy lists specific revenue goals and products to be sold to a particular division or department.  Tasks and milestones are also attached to each strategy.</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>SFDC_Acct_Plan__r.Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Strategies</relationshipLabel>
+        <relationshipName>R00N50000001oQ1AEAU</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Business_Problem_Addressed__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Problem Addressed</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Est_Comp_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Completion Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Product_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Product Revenue</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Service_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Service Revenue</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Total_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <formula>Estimated_Product_Revenue__c  +  Estimated_Service_Revenue__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Estimated Total Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>How_can_we_help_them_succeed__c</fullName>
+        <externalId>false</externalId>
+        <label>How can we help them succeed</label>
+        <length>32000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>How_do_we_measure_success__c</fullName>
+        <externalId>false</externalId>
+        <label>How do we measure success</label>
+        <length>32000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Key_Contact_Sponsor__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Contact Sponsor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Strategies</relationshipLabel>
+        <relationshipName>R00N50000001oQ1GEAU</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Acct_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Plan</label>
+        <referenceTo>SFDC_Acct_Plan__c</referenceTo>
+        <relationshipLabel>Strategies</relationshipLabel>
+        <relationshipName>R00N50000001oQ1MEAU</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Solution_Goal__c</fullName>
+        <externalId>false</externalId>
+        <label>Solution / Goal</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Strategy_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Strategy Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investigation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Opportunity Created</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Won - Achieved Rev. Goals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Won - Partial Achievement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lost - No Opportunity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>What_are_their_success_factors__c</fullName>
+        <externalId>false</externalId>
+        <label>What are their success factors</label>
+        <length>32000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>What_barriers_to_success_do_they_foresee__c</fullName>
+        <externalId>false</externalId>
+        <label>What barriers to success do they foresee</label>
+        <length>32000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Strategy</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Strategy Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Strategies</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Initiated to report detailed information regarding the potential churn of a customer.</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>ARResponse__c</fullName>
+        <externalId>false</externalId>
+        <label>AR Response</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>AR_AM_Response__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter your response to AR.</inlineHelpText>
+        <label>AR AM Response</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>AR__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>AR</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Acceptable_contract_term__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What lengths of contracts are they willing to sign?</inlineHelpText>
+        <label>Acceptable contract term</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Access_to_Rack_Lay__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>copy/paste url into new window to open a ticket with Rack Law</inlineHelpText>
+        <label>Access to Rack Law</label>
+        <picklist>
+            <picklistValues>
+                <fullName>https://www.rackspacelaw.com</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Acct_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Acct Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Acct_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Acct_Num__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Acct Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AdditionalInformation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>additional information provided to A/R</inlineHelpText>
+        <label>Additional Information</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Alternative_Segments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select all segments that were suggested as an alternative.</inlineHelpText>
+        <label>Alternative Segments</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cloud Files</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cloud Servers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cloud Sites</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intensive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Managed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Platform</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Virtualization</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Any_licensing_needs_beyond_the_OS__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Can the customer provide all licensing needs beyond the OS?</inlineHelpText>
+        <label>Any licensing needs beyond the OS?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Are_there_over_8_servers__c</fullName>
+        <externalId>false</externalId>
+        <label>Are there over 8 servers?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>At_least_5_servers__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>IF NO THEN PLATFORM IS NOT AN OPTION</inlineHelpText>
+        <label>At least 5 servers</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>BDC_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of BDC who compiled config/capex in Master Pricing Tool.</inlineHelpText>
+        <label>BDC Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Churn_Prevention_Plan1</relationshipName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BankruptcyFilings__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This information is sent via eConnect from AR and is read only to others.</inlineHelpText>
+        <label>Bankruptcy Filings</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CLOUD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CLOUD</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CMRR__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Account.CMRR__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CMRR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPP_Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CPP Approved</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Can_Customer_support_network__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Can Customer support all aspects of networking?</inlineHelpText>
+        <label>Can Customer support network?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Can_customer_manage_all_backups__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Does this customer have the resources and expertise to manage all backups?</inlineHelpText>
+        <label>Can customer manage all backups?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Can_customer_respond_to_app_issues_24_7__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Can customer respond to all applications issues 24/7?</inlineHelpText>
+        <label>Can customer respond to app issues 24/7?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Capability_to_fully_support_OS__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Does the customer have the capability to fully support the OS?</inlineHelpText>
+        <label>Capability to fully support OS?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Churn_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Value__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Churn Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Churn_Probability__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Probability</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Churn Probability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Cloud_AM_Response__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter your response to Cloud.</inlineHelpText>
+        <label>Cloud AM Response</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Cloud_Response__c</fullName>
+        <externalId>false</externalId>
+        <label>Cloud Response</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Competitor_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What additional data do we have about the competitor?</inlineHelpText>
+        <label>Competitor Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Competitor_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Churn Prevention Plan</relationshipLabel>
+        <relationshipName>Churn_Prevention_Plan</relationshipName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Compiled_config_capex_in_pricing_tool__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Has the BDC compiled config and capex for this account in the Master Pricing Tool? If No, this must be done first.</inlineHelpText>
+        <label>Compiled config/capex in pricing tool?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Confirmed_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Confirmed_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Confirmed Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CreditCheck__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This information comes via eConnect and is read only to others.</inlineHelpText>
+        <label>Credit Check</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customer_s_future_plan_with_Rackspace__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the customer&apos;s plan for the future with Rackspace?</inlineHelpText>
+        <label>Customer&apos;s future plan with Rackspace?</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customer_s_target_price_point__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Has the customer provided us with a target price for future 
+Invoice?</inlineHelpText>
+        <label>Customer&apos;s target price point?</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Decommissioned_Devices__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>List the devices being decommissioned.</inlineHelpText>
+        <label>Decommissioned Devices</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Devices_being_added__c</fullName>
+        <externalId>false</externalId>
+        <label>Devices being added?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Devices_being_decommissioned__c</fullName>
+        <externalId>false</externalId>
+        <label>Devices being decommissioned?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Double_Check_Configuration_in_CORE__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Have you double checked the configuration in CORE to ensure accuracy (eg. Licensing, bandwidth, specs)?</inlineHelpText>
+        <label>Double Check Configuration in CORE</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Explain_MRR_and_Invoice_difference__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please explain why there&apos;s a difference between the two.</inlineHelpText>
+        <label>Explain MRR and Invoice difference</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FINANCE__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>FINANCE</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Finance_AM_Response__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter your response to Finance.</inlineHelpText>
+        <label>Finance AM Response</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Finance_Response__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Response</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Forced_to_deploy_additional_servers__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Have they been forced to deploy additional servers based on the amount of files they store?</inlineHelpText>
+        <label>Forced to deploy additional servers?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Forecast_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Forecast_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Forecast Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Foreced_to_purchase_bandwidth__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Have they been forced to purchase bandwidth/storage based on the amount of files they store?</inlineHelpText>
+        <label>Foreced to purchase bandwidth</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Functionality_of_the_site_environment__c</fullName>
+        <externalId>false</externalId>
+        <label>Functionality of the site/environment?</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Has_account_done_prepays_in_the_past__c</fullName>
+        <externalId>false</externalId>
+        <label>Has account done prepays in the past?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Has_an_SE_qualified_acct_for_platform__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If NO, then this must be done before the platform team is engaged.</inlineHelpText>
+        <label>Has an SE qualified acct  for platform?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>LEGAL__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>please use custom link to access LEGAL&apos;s support page.</inlineHelpText>
+        <label>LEGAL</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Online_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This the date the account went online.</inlineHelpText>
+        <label>Online Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Name</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Churn Prevention Plan</relationshipLabel>
+        <relationshipName>Churn_Escalation</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Owner_Role__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Owner_Role__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PLATFORM__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Managed Colocation</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PaymentHistory__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This information comes via eConnect and is read only to others.</inlineHelpText>
+        <label>Payment History</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Platform_AM_Response__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter your response to Platform.</inlineHelpText>
+        <label>Managed Colocation AM Response</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Platform_Response__c</fullName>
+        <externalId>false</externalId>
+        <label>Managed Colocation Response</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Prevention_Results__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please detail the results of your churn prevention strategy.</inlineHelpText>
+        <label>Resolution</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Prevention_Strategy__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter your strategy to deter the churn.</inlineHelpText>
+        <label>Prevention Strategy</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Previous_prepay_amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Previous prepay amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pricing_for_decommissioned_devices__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricing for decommissioned devices?</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Pricing_for_devices_being_added__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricing for devices being added</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Pricing_tool_match_invoice__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Does the MRR in the pricing tool match the invoice?</inlineHelpText>
+        <label>Pricing tool match invoice?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_due_date_to_customer__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the due date for a proposal to the customer (Minimum 2 days lead time)?</inlineHelpText>
+        <label>Proposal due date to customer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rack_Law_Ticket__c</fullName>
+        <externalId>true</externalId>
+        <label>Rack Law Ticket #</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Results__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked if the results are populated.</description>
+        <externalId>false</externalId>
+        <label>Results</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SE_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>SE name that approved account for Platform.</inlineHelpText>
+        <label>SE Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Churn_Prevention_Plan</relationshipName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Segment__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the segment you need pricing for.</inlineHelpText>
+        <label>Segment</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Intensive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Managed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Platform</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Significant_web_server_customization__c</fullName>
+        <externalId>false</externalId>
+        <label>Significant web server customization?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SpecialPaymentTerms__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This information comes via eConnect and is read only to others.</inlineHelpText>
+        <label>Special Payment Terms</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Special_deal_details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Is there a custom SLA, MSA, out clause etc…</inlineHelpText>
+        <label>Special deal details</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Special_deals_with_customer__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Have we made any special deals with the customer (custom SLA, special pricing, etc.)</inlineHelpText>
+        <label>Special deals with customer?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Won</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ticket_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Ticket number where the issue was worked.  Please use 090429-05412 format.  Do not include # or any other characters.</inlineHelpText>
+        <label>Ticket Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Under_Contract__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>At the time of this decommission will the customer be under contract?</inlineHelpText>
+        <label>Under Contract?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>VIRTULIZATION__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>VIRTULIZATION</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Web_Server_Customization_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If customization is &quot;YES&quot; please provide customization details for the web server.</inlineHelpText>
+        <label>Web Server Customization Details</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>What_are_the_compliance_needs__c</fullName>
+        <externalId>false</externalId>
+        <label>What are the compliance needs?</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>What_database_platform_is_used__c</fullName>
+        <externalId>false</externalId>
+        <label>What database platform is used?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>What_is_the_accounts_AR_status__c</fullName>
+        <externalId>false</externalId>
+        <label>What is the accounts AR status?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Current</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>60 days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>90 days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>120 days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>What_programming_language_being_used__c</fullName>
+        <externalId>false</externalId>
+        <label>What programming language being used?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>What_programming_libraries_are_used__c</fullName>
+        <externalId>false</externalId>
+        <label>What programming libraries are used?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>What_s_the_exact_configuration__c</fullName>
+        <externalId>false</externalId>
+        <label>What&apos;s the exact configuration?</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>What_should_be_their_monthly_fee__c</fullName>
+        <externalId>false</externalId>
+        <label>What should be their monthly fee?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>When_did_they_pay__c</fullName>
+        <externalId>false</externalId>
+        <label>When did they pay?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>When_will_it_end__c</fullName>
+        <externalId>false</externalId>
+        <label>When will it end?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Why_is_this_customer_a_churn_risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Why is this customer a churn risk?</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Would_customer_like_pricing__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional segment pricing requested?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>contractstatus__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This information comes via eConnect and is read only to others.</inlineHelpText>
+        <label>Contract Status</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <label>Churn Prevention Plan</label>
+    <nameField>
+        <displayFormat>CPP-{YYYY}{MM}-{0}</displayFormat>
+        <label>Churn Prevention Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Churn Prevention Plan</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Acct_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Acct_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Opportunity_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Churn_Probability__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Amount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Acct_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Acct_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Opportunity_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Churn_Probability__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Amount__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Acct_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Acct_Number__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Opportunity_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Churn_Probability__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Amount__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CREATEDBY_USER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CREATED_DATE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Acct_Name__c</searchFilterFields>
+        <searchFilterFields>Acct_Number__c</searchFilterFields>
+        <searchFilterFields>Opportunity_Name__c</searchFilterFields>
+        <searchFilterFields>Churn_Probability__c</searchFilterFields>
+        <searchFilterFields>Amount__c</searchFilterFields>
+        <searchFilterFields>CREATEDBY_USER</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchResultsAdditionalFields>Acct_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Acct_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Opportunity_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Churn_Probability__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Cloud_Required_Fields</fullName>
+        <active>true</active>
+        <description>If the CLOUD check box is selected then all CLOUD fields are required.</description>
+        <errorConditionFormula>AND(CLOUD__c,  
+OR(ISPICKVAL(Forced_to_deploy_additional_servers__c, &quot;&quot;),
+ISPICKVAL(Significant_web_server_customization__c, &quot;&quot;),
+ISPICKVAL(Foreced_to_purchase_bandwidth__c, &quot;&quot;),
+ISNULL(What_are_the_compliance_needs__c),
+LEN(What_are_the_compliance_needs__c)&lt;1,
+ISNULL(What_programming_language_being_used__c),
+LEN(What_programming_language_being_used__c)&lt;1,
+ISNULL(What_database_platform_is_used__c),
+LEN(What_database_platform_is_used__c)&lt;1,
+ISNULL(What_programming_libraries_are_used__c),
+LEN(What_programming_libraries_are_used__c)&lt;1,
+ISNULL(Web_Server_Customization_Details__c),
+LEN(Web_Server_Customization_Details__c)&lt;1))</errorConditionFormula>
+        <errorMessage>All fields in the CLOUD section are required when CLOUD is checked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Devices_being_added_required</fullName>
+        <active>true</active>
+        <description>When Devices being added = Yes then exact configuration and pricing is required.</description>
+        <errorConditionFormula>AND(ISPICKVAL(Devices_being_added__c, &quot;Yes&quot;),
+OR(LEN(What_s_the_exact_configuration__c) &lt; 1,
+ISNULL(What_s_the_exact_configuration__c), 
+LEN(Pricing_for_devices_being_added__c) &lt; 1,
+ISNULL(Pricing_for_devices_being_added__c)))</errorConditionFormula>
+        <errorDisplayField>Devices_being_added__c</errorDisplayField>
+        <errorMessage>When Devices being added = Yes then What &apos;s the exact configuration and Pricing for devices being added are required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Devices_being_decommissioned_required</fullName>
+        <active>true</active>
+        <description>When Devices being decommissioned = yes the decommissioned devices and the pricing for decommissioned devices are required.</description>
+        <errorConditionFormula>AND(ISPICKVAL(Devices_being_decommissioned__c, &quot;Yes&quot;),
+OR(LEN(Decommissioned_Devices__c) &lt;1,
+ISNULL(Decommissioned_Devices__c), 
+LEN(Pricing_for_decommissioned_devices__c) &lt; 1,
+ISNULL(Pricing_for_decommissioned_devices__c)))</errorConditionFormula>
+        <errorDisplayField>Devices_being_decommissioned__c</errorDisplayField>
+        <errorMessage>When Devices being commissioned = Yes then Decommissioned Devices and Pricing for decommissioned devices are required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Finance_all_are_required</fullName>
+        <active>true</active>
+        <description>If the Finance checkbox is checked then all fields on the right in the Finance section are required.</description>
+        <errorConditionFormula>AND(FINANCE__c,
+OR(ISPICKVAL(Double_Check_Configuration_in_CORE__c, &quot;&quot;),
+ISPICKVAL(Pricing_tool_match_invoice__c, &quot;&quot;),
+ISPICKVAL(Has_account_done_prepays_in_the_past__c, &quot;&quot;),
+ISPICKVAL(Devices_being_decommissioned__c, &quot;&quot;),
+ISPICKVAL(Devices_being_added__c, &quot;&quot;),
+ISPICKVAL(Would_customer_like_pricing__c, &quot;&quot;),
+ISNULL(Customer_s_future_plan_with_Rackspace__c)))</errorConditionFormula>
+        <errorMessage>All fields on the left side in the FINANCE section are required when FINANCE is checked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Has_account_done_prepays_required</fullName>
+        <active>true</active>
+        <description>When Has account done prepays = Yes then the fields on the right are required (previous amount, when paid, when end, monthly fee be)</description>
+        <errorConditionFormula>AND(ISPICKVAL( Has_account_done_prepays_in_the_past__c, &quot;Yes&quot;), 
+OR(Previous_prepay_amount__c = 0.00,
+ISNULL(Previous_prepay_amount__c), 
+ISNULL(When_did_they_pay__c), 
+ISNULL(When_will_it_end__c), 
+What_should_be_their_monthly_fee__c = 0.00,
+ISNULL(What_should_be_their_monthly_fee__c)))</errorConditionFormula>
+        <errorDisplayField>Has_account_done_prepays_in_the_past__c</errorDisplayField>
+        <errorMessage>If Has account done prepays in the past = Yes then you must populate Previous Prepay Amount, When did they pay, When will it end, and What should be their monthly fee.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Legal_all_are_required</fullName>
+        <active>true</active>
+        <description>When the Legal checkbox is checked the Legal fields are required.</description>
+        <errorConditionFormula>AND( LEGAL__c,  LEN(Rack_Law_Ticket__c)&gt;1)</errorConditionFormula>
+        <errorMessage>All fields in the LEGAL section are required when LEGAL is checked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Platform_all_are_required</fullName>
+        <active>true</active>
+        <description>If the Platform checkbox is checked all Platform section fields are required.</description>
+        <errorConditionFormula>AND(PLATFORM__c,
+OR(ISPICKVAL(At_least_5_servers__c, &quot;&quot;),
+ISPICKVAL(Capability_to_fully_support_OS__c, &quot;&quot;),
+ISPICKVAL(Any_licensing_needs_beyond_the_OS__c, &quot;&quot;),
+ISPICKVAL(Can_Customer_support_network__c, &quot;&quot;),
+ISPICKVAL(Can_customer_respond_to_app_issues_24_7__c, &quot;&quot;),
+ISPICKVAL(Can_customer_manage_all_backups__c, &quot;&quot;),
+ISPICKVAL(Special_deals_with_customer__c, &quot;&quot;),
+ISPICKVAL(Has_an_SE_qualified_acct_for_platform__c, &quot;&quot;),
+ISPICKVAL(Compiled_config_capex_in_pricing_tool__c, &quot;&quot;), 
+ISNULL(SE_Name__c),
+ISNULL(BDC_Name__c)))</errorConditionFormula>
+        <errorMessage>All fields in the PLATFORM section are required when PLATFORM is checked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Pricing_Tool_Match_Required</fullName>
+        <active>true</active>
+        <description>If the pricing tool match = No then explain MRR and Invoice difference is required</description>
+        <errorConditionFormula>AND(ISPICKVAL(Pricing_tool_match_invoice__c, &quot;No&quot;), 
+OR(LEN(Explain_MRR_and_Invoice_difference__c) &lt; 1,
+ISNULL(Explain_MRR_and_Invoice_difference__c)))</errorConditionFormula>
+        <errorDisplayField>Explain_MRR_and_Invoice_difference__c</errorDisplayField>
+        <errorMessage>Explain MRR and Invoice Difference is required when the Pricing Tool Match Invoice is No.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>A_R_Request</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>400</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>A/R Request</masterLabel>
+        <openType>newWindow</openType>
+        <position>topLeft</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://econnect.rackspace.com/churn_prevention_plan/xfer?account_number={!ChurnPreventionPlan__c.Acct_Number__c}&amp;cuser={!User.SSO_Username__c}&amp;process=us</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Rack_Law</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Rack Law</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://rackspacelaw.com/home/index.php</url>
+    </webLinks>
+</CustomObject>

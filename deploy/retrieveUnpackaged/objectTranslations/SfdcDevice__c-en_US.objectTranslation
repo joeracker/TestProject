@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SFDC Device</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SFDC Devices</value>
+    </caseValues>
+    <fields>
+        <label><!-- Batch Fail --></label>
+        <name>Batch_Fail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the description for why the device failed reconcilliation. --></help>
+        <label><!-- Fail Description --></label>
+        <name>Fail_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows if the device passed the reconcilliation with Navision. --></help>
+        <label><!-- Reconcile Pass --></label>
+        <name>Reconcile_Pass__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Data Center the device will be in. --></help>
+        <label><!-- Data Center --></label>
+        <name>data_center_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the device number from CORE. --></help>
+        <label><!-- Device Number --></label>
+        <name>device_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the status of the device. --></help>
+        <label><!-- Device Status --></label>
+        <name>device_status__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date the device is due to the customer. --></help>
+        <label><!-- Due to Customer --></label>
+        <name>due_to_customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the line item price for the device. --></help>
+        <label><!-- MRR --></label>
+        <name>mrr__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date the device went offline. --></help>
+        <label><!-- Offline Date --></label>
+        <name>offline_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date the device went online. --></help>
+        <label><!-- Online Date --></label>
+        <name>online_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the opportunity that is associated to the device. --></help>
+        <label><!-- Opportunity --></label>
+        <name>opportunity__c</name>
+        <relationshipLabel><!-- SFDC Devices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the platform for the device from CORE. --></help>
+        <label><!-- Platform --></label>
+        <name>platform_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the setup fee for line item pricing. --></help>
+        <label><!-- Setup --></label>
+        <name>setup__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the status number for the device. --></help>
+        <label><!-- Status Number --></label>
+        <name>status_number__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

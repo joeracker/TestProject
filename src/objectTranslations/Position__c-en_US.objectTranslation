@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Position</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Positions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Apex --></label>
+        <name>Apex__c</name>
+    </fields>
+    <fields>
+        <label><!-- C# --></label>
+        <name>CSharp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Educational Requirements --></label>
+        <name>Educational_Requirements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hire By --></label>
+        <name>Hire_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- JavaScript --></label>
+        <name>JavaScript__c</name>
+    </fields>
+    <fields>
+        <label><!-- Java --></label>
+        <name>Java__c</name>
+    </fields>
+    <fields>
+        <help><!-- High level description of job and its duties. --></help>
+        <label><!-- Job Description --></label>
+        <name>Job_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Pay --></label>
+        <name>Max_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Pay --></label>
+        <name>Min_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Date --></label>
+        <name>Open_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Responsibilities --></label>
+        <name>Responsibilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills Required --></label>
+        <name>Skills_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Required --></label>
+        <name>Travel_Required__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

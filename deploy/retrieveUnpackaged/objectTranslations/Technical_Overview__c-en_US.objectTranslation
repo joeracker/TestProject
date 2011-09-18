@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Technical Overview</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Technical Overview</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter AD Domain Name if &quot;Customer Active Directory&quot; has been checked. --></help>
+        <label><!-- AD Domain Name --></label>
+        <name>AD_Domain_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Technical Overview --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Acct Number --></label>
+        <name>Acct_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Directory Notes --></label>
+        <name>Active_Directory_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Configuration Notes --></label>
+        <name>Additional_Configuration_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Configuration --></label>
+        <name>Additional_Configuration__c</name>
+        <picklistValues>
+            <masterLabel>DNS</masterLabel>
+            <translation><!-- DNS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defrag Manager</masterLabel>
+            <translation><!-- Defrag Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managed Backup</masterLabel>
+            <translation><!-- Managed Backup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitoring</masterLabel>
+            <translation><!-- Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patching</masterLabel>
+            <translation><!-- Patching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSL</masterLabel>
+            <translation><!-- SSL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symantec AntiVirus</masterLabel>
+            <translation><!-- Symantec AntiVirus --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Software Notes --></label>
+        <name>Additional_Software_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Software --></label>
+        <name>Additional_Software__c</name>
+        <picklistValues>
+            <masterLabel>BizTalk</masterLabel>
+            <translation><!-- BizTalk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Fusion</masterLabel>
+            <translation><!-- Cold Fusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange</masterLabel>
+            <translation><!-- Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SharePoint</masterLabel>
+            <translation><!-- SharePoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tomcat</masterLabel>
+            <translation><!-- Tomcat --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Describe the customer’s disaster recovery plans (e.g. manual failover of database from DFW to IAD (log shipping), automatic failover of DNS for website using a third-party DNS provider, etc.). --></help>
+        <label><!-- Business Continuity Plan --></label>
+        <name>Business_Continuity_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cabinet Location --></label>
+        <name>Cabinet_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Notes --></label>
+        <name>Compliance_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Active Directory --></label>
+        <name>Custom_Active_Directory__c</name>
+    </fields>
+    <fields>
+        <label><!-- DC Location --></label>
+        <name>DC_Location__c</name>
+        <picklistValues>
+            <masterLabel>Dallas/Fort Worth (DFW1)</masterLabel>
+            <translation><!-- Dallas/Fort Worth (DFW1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dulles Data Center (IAD1)</masterLabel>
+            <translation><!-- Dulles Data Center (IAD1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hong Kong (HKG)</masterLabel>
+            <translation><!-- Hong Kong (HKG) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London (LON1)</masterLabel>
+            <translation><!-- London (LON1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London (LON2)</masterLabel>
+            <translation><!-- London (LON2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slough (LON3)</masterLabel>
+            <translation><!-- Slough (LON3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vegas Data Center (SAT2)</masterLabel>
+            <translation><!-- Vegas Data Center (SAT2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weston Data Center (SAT1)</masterLabel>
+            <translation><!-- Weston Data Center (SAT1) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Describe any technologies (e.g. clustering, mirroring, log shipping, service broker, etc.) that the customer is using on their database servers. --></help>
+        <label><!-- Database Configuration --></label>
+        <name>Database_Configuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe what the customer uses their Rackspace configuration for (e.g. public facing website, internal accounting apps, etc.). --></help>
+        <label><!-- General Business Overview --></label>
+        <name>General_Business_Overview__c</name>
+    </fields>
+    <fields>
+        <label><!-- HIPPA --></label>
+        <name>HIPPA__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Availability Notes --></label>
+        <name>High_Availability_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Availability --></label>
+        <name>High_Availability__c</name>
+        <picklistValues>
+            <masterLabel>Full HA</masterLabel>
+            <translation><!-- Full HA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redundant Firewalls</masterLabel>
+            <translation><!-- Redundant Firewalls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redundant Load Balancers</masterLabel>
+            <translation><!-- Redundant Load Balancers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intensive (Shared) Active Directory --></label>
+        <name>Intensive_Shared_Active_Directory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe the customer’s email needs (e.g. outbound only, inbound/outbound Exchange, etc.) and any specific configuration details. --></help>
+        <label><!-- Mail Configuraiton --></label>
+        <name>Mail_Configuraiton__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe any non-standard network configurations (e.g. an additional local network, use of Windows Firewall, etc.) or configuration notes (e.g. network ranges for load balancer VIPs and services, etc.). Include any collocated network devices. --></help>
+        <label><!-- Network Configuration --></label>
+        <name>Network_Configuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- PCI --></label>
+        <name>PCI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe any major issues that the customer has had previously (either at Rackspace or a previous provider). --></help>
+        <label><!-- Past Major Incidents --></label>
+        <name>Past_Major_Incidents__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAS 70 --></label>
+        <name>SAS_70__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Technical Overview --></label>
+        <name>Technical_Overview__c</name>
+    </fields>
+    <layouts>
+        <layout>Technical Overview Layout</layout>
+        <sections>
+            <label><!-- Active Directory --></label>
+            <section>Active Directory</section>
+        </sections>
+        <sections>
+            <label><!-- Compliance Requirements --></label>
+            <section>Compliance Requirements</section>
+        </sections>
+        <sections>
+            <label><!-- Configurations --></label>
+            <section>Configurations</section>
+        </sections>
+        <sections>
+            <label><!-- Configurations Notes --></label>
+            <section>Configurations Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Continuity Plan --></label>
+            <section>Continuity Plan</section>
+        </sections>
+        <sections>
+            <label><!-- General Business Overview --></label>
+            <section>General Business Overview</section>
+        </sections>
+        <sections>
+            <label><!-- High Availability --></label>
+            <section>High Availability</section>
+        </sections>
+        <sections>
+            <label><!-- Past Major Incidents --></label>
+            <section>Past Major Incidents</section>
+        </sections>
+        <sections>
+            <label><!-- Technical Overview --></label>
+            <section>Technical Overview</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Acct Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Acct Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Sales Growth --></label>
+        <name>Account_Sales_Growth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type_del__c</name>
+        <picklistValues>
+            <masterLabel>Existing Customer</masterLabel>
+            <translation><!-- Existing Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Customer</masterLabel>
+            <translation><!-- New Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Account Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Acct Num --></label>
+        <name>Acct_Num__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do you have any new projects that you would like our help with? --></help>
+        <label><!-- Any new projects you need help with? --></label>
+        <name>Any_new_projects_you_need_help_with__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please list the applications currently utilized at this organization. --></help>
+        <label><!-- Applications --></label>
+        <name>Applications__c</name>
+    </fields>
+    <fields>
+        <help><!-- What should we look out for to avoid specifically. Hot spots / red flags, etc.... --></help>
+        <label><!-- Areas of Concern --></label>
+        <name>Areas_of_Concern__c</name>
+    </fields>
+    <fields>
+        <label><!-- Areas of Improvement --></label>
+        <name>Areas_of_Improvement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do they have several aspects of their business that RS will be involved with? --></help>
+        <label><!-- Aspects of Business involving RS? --></label>
+        <name>Aspects_of_Business_involving_RS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Have organizational stakeholders committed to attend? --></help>
+        <label><!-- Attendees --></label>
+        <name>Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backup Differentials --></label>
+        <name>Backup_Differentials__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription</masterLabel>
+            <translation><!-- Subscription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unmetered</masterLabel>
+            <translation><!-- Unmetered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Cycle --></label>
+        <name>Billing_Cycle__c</name>
+        <picklistValues>
+            <masterLabel>30 - 60 Days</masterLabel>
+            <translation><!-- 30 - 60 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 - 90 Days</masterLabel>
+            <translation><!-- 60 - 90 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 - 120 Days</masterLabel>
+            <translation><!-- 90 - 120 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 30 Days</masterLabel>
+            <translation><!-- &lt; 30 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 120 Days</masterLabel>
+            <translation><!-- &gt; 120 Days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What do we need to do to facilitate payment? --></help>
+        <label><!-- Billing Instructions --></label>
+        <name>Billing_Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brief Description of Outcome of Workshop --></label>
+        <name>Brief_Description_of_Outcome_of_Workshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has this organization budgeted for a Hosted computing project, private cloud, or feasibility study within the next twelve months? --></help>
+        <label><!-- Budget --></label>
+        <name>Budget__c</name>
+    </fields>
+    <fields>
+        <help><!-- (i.e. grow MRR by 10?, win back office business, etc) --></help>
+        <label><!-- Business Account Goals --></label>
+        <name>Business_Account_Goals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 1 % Available to Outsource --></label>
+        <name>Business_Unit_1_Available_to_Outsource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 1 Decison Maker --></label>
+        <name>Business_Unit_1_Decison_Maker__c</name>
+        <relationshipLabel><!-- Acct Plans (Business Unit 1 Decison Maker) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 1 Name --></label>
+        <name>Business_Unit_1_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 1 % Wallet --></label>
+        <name>Business_Unit_1_Wallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 2 % Available to Outsource --></label>
+        <name>Business_Unit_2_Available_to_Outsource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 2 Decison Maker --></label>
+        <name>Business_Unit_2_Decison_Maker__c</name>
+        <relationshipLabel><!-- Acct Plans (Business Unit 2 Decison Maker) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 2 Name --></label>
+        <name>Business_Unit_2_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 2 % Wallet --></label>
+        <name>Business_Unit_2_Wallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 3 % Available to Outsource --></label>
+        <name>Business_Unit_3_Available_to_Outsource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 3 Decison Maker --></label>
+        <name>Business_Unit_3_Decison_Maker__c</name>
+        <relationshipLabel><!-- Acct Plans (Business Unit 3 Decison Maker) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 3 Name --></label>
+        <name>Business_Unit_3_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit 3 % Wallet --></label>
+        <name>Business_Unit_3_Wallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- CA/Cloud Specialist Assigned --></label>
+        <name>CA_Cloud_Specialist_Assigned__c</name>
+        <relationshipLabel><!-- Acct Plans (CA/Cloud Specialist Assigned) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CMRR --></label>
+        <name>CMRR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Scheduled Date/Time --></label>
+        <name>Call_Scheduled_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Scheduled --></label>
+        <name>Call_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Used --></label>
+        <name>Campaign_Used__c</name>
+        <picklistValues>
+            <masterLabel>Linux 5 – 64-bit</masterLabel>
+            <translation><!-- Linux 5 – 64-bit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linux ES4</masterLabel>
+            <translation><!-- Linux ES4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketo</masterLabel>
+            <translation><!-- Marketo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAT1 DC Logical</masterLabel>
+            <translation><!-- SAT1 DC Logical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAT1 DC Physical</masterLabel>
+            <translation><!-- SAT1 DC Physical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAT2 DC Logical</masterLabel>
+            <translation><!-- SAT2 DC Logical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAT2 DC Physical</masterLabel>
+            <translation><!-- SAT2 DC Physical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slicehost 1 Marketo</masterLabel>
+            <translation><!-- Slicehost 1 Marketo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team A6 NPS Detractors</masterLabel>
+            <translation><!-- Team A6 NPS Detractors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Win2K3</masterLabel>
+            <translation><!-- Win2K3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Win2K8</masterLabel>
+            <translation><!-- Win2K8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Certifications Required --></label>
+        <name>Certifications_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloud Account Number --></label>
+        <name>Cloud_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloud Adoption/Openstack --></label>
+        <name>Cloud_Adoption_Openstack__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloud Free Trial Used --></label>
+        <name>Cloud_Free_Trial_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloud/Virtualization Strategy --></label>
+        <name>Cloud_Virtualization_Strategy__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is there a compelling event driving interest in Hosting (e.g. data center upgrade or migration project)? Consolidation or app modernization/rationalization initiative? --></help>
+        <label><!-- Compelling Event --></label>
+        <name>Compelling_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor to Remove --></label>
+        <name>Competitor_to_Remove__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configuration growth over time --></label>
+        <name>Configuration_growth_over_time__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uncertain</masterLabel>
+            <translation><!-- Uncertain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Renewal Date(s) --></label>
+        <name>Contract_Renewal_Date_s__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who is the decision maker who signed off on deal? --></help>
+        <label><!-- Contract Sign Off --></label>
+        <name>Contract_Sign_Off__c</name>
+        <relationshipLabel><!-- Acct Plans (Contract Sign Off) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+        <relationshipLabel><!-- Acct Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Conversion Probability --></label>
+        <name>Conversion_Probability__c</name>
+        <picklistValues>
+            <masterLabel>0%</masterLabel>
+            <translation><!-- 0% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100%</masterLabel>
+            <translation><!-- 100% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25%</masterLabel>
+            <translation><!-- 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%</masterLabel>
+            <translation><!-- 50% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75%</masterLabel>
+            <translation><!-- 75% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Converted to Cloud --></label>
+        <name>Converted_to_Cloud__c</name>
+        <picklistValues>
+            <masterLabel>No - Canceled Account</masterLabel>
+            <translation><!-- No - Canceled Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No - Keeping Dedicated Server</masterLabel>
+            <translation><!-- No - Keeping Dedicated Server --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Managed Cloud</masterLabel>
+            <translation><!-- Yes - Managed Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Managed Cloud - MCR not involved</masterLabel>
+            <translation><!-- Yes - Managed Cloud - MCR not involved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - UnManaged Cloud</masterLabel>
+            <translation><!-- Yes - UnManaged Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - UnManaged Cloud - MCR not involved</masterLabel>
+            <translation><!-- Yes - UnManaged Cloud - MCR not involved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Corporate Sponsor --></label>
+        <name>Corporate_Sponsor__c</name>
+        <relationshipLabel><!-- Acct Plans (Corporate Sponsor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Critical Sites Overview Date --></label>
+        <name>Critical_Sites_Overview_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is customer current IT spend? What % is infrastructure vs. applications? --></help>
+        <label><!-- Current IT Spend --></label>
+        <name>Current_IT_Spend__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is their IT infrastructure distributed? If so, how many locations? (onsite, hosting provider, collocation?) --></help>
+        <label><!-- Current Infrastructure --></label>
+        <name>Current_Infrastructure__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does this organization have a current IT Hosting or Cloud Strategy (for next 6 – 12 months)? --></help>
+        <label><!-- Current Strategy --></label>
+        <name>Current_Strategy__c</name>
+    </fields>
+    <fields>
+        <help><!-- What technology are they currently utilizing? (traditional hardware, virtual machines – what platform, cloud?) --></help>
+        <label><!-- Current Technology --></label>
+        <name>Current_Technology__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom MOM --></label>
+        <name>Custom_MOM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Applications Supported --></label>
+        <name>Customer_Applications_Supported__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Briefing Center Visit --></label>
+        <name>Customer_Briefing_Center_Visit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who runs the company? --></help>
+        <label><!-- Customer CEO --></label>
+        <name>Customer_CEO__c</name>
+        <relationshipLabel><!-- Acct Plans (Customer CEO) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer CIO --></label>
+        <name>Customer_CIO__c</name>
+        <relationshipLabel><!-- Acct Plans (Customer CIO) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Called --></label>
+        <name>Customer_Called__c</name>
+        <picklistValues>
+            <masterLabel>Yes - Marketo</masterLabel>
+            <translation><!-- Yes - Marketo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - No Campaign Used</masterLabel>
+            <translation><!-- Yes - No Campaign Used --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - SAT1/SAT2</masterLabel>
+            <translation><!-- Yes - SAT1/SAT2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Win2K8</masterLabel>
+            <translation><!-- Yes - Win2K8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Ticket Number for Cloud Fit Call --></help>
+        <label><!-- Customer Fit Ticket --></label>
+        <name>Customer_Fit_Ticket__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Limitations --></label>
+        <name>Customer_Limitations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Opportunities --></label>
+        <name>Customer_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Strengths --></label>
+        <name>Customer_Strengths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Threats --></label>
+        <name>Customer_Threats__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Weaknesses/Challenges --></label>
+        <name>Customer_Weaknesses_Challenges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Web Site --></label>
+        <name>Customer_Web_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer using Cloud already --></label>
+        <name>Customer_using_Cloud_already__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Managed Cloud</masterLabel>
+            <translation><!-- Yes - Managed Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - UnManaged Cloud</masterLabel>
+            <translation><!-- Yes - UnManaged Cloud --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- what issues does the customer face on a daily basis? --></help>
+        <label><!-- Daily customer facing issues --></label>
+        <name>Daily_customer_facing_issues__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who decides if they stay or leave? --></help>
+        <label><!-- Decison Maker --></label>
+        <name>Decison_Maker__c</name>
+        <relationshipLabel><!-- Acct Plans (Decison Maker) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Department Contact --></label>
+        <name>Department_Contact__c</name>
+        <relationshipLabel><!-- Acct Plans (Department Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Device CMRR --></label>
+        <name>Device_CMRR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Datacenter Abbr --></label>
+        <name>Device_Datacenter_Abbr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Make/Model --></label>
+        <name>Device_Make_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Number --></label>
+        <name>Device_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device OS Name --></label>
+        <name>Device_OS_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device OS Version --></label>
+        <name>Device_OS_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device OS --></label>
+        <name>Device_OS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Type --></label>
+        <name>Device_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of downgrades per year. --></help>
+        <label><!-- Downgrades --></label>
+        <name>Downgrades__c</name>
+    </fields>
+    <fields>
+        <label><!-- EA Assigned --></label>
+        <name>EA_Assigned__c</name>
+        <relationshipLabel><!-- Acct Plans (EA Assigned) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Firewall Audit --></label>
+        <name>Firewall_Audit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Firewall Type --></label>
+        <name>Firewall_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- What do we need to prove to customer to gain future business or renewals? --></help>
+        <label><!-- Future business or renewals --></label>
+        <name>Future_business_or_renewals__c</name>
+    </fields>
+    <fields>
+        <help><!-- What are the growth areas? --></help>
+        <label><!-- Growth Areas --></label>
+        <name>Growth_Areas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Growth Plan Overview --></label>
+        <name>Growth_Plan_Overview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Growth Plan Strategy --></label>
+        <name>Growth_Plan_Strategy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Growth --></label>
+        <name>Growth__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Risk Customer --></label>
+        <name>High_Risk_Customer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hosting Experience --></label>
+        <name>Hosting_Experience__c</name>
+        <picklistValues>
+            <masterLabel>Bad</masterLabel>
+            <translation><!-- Bad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hosting Platforms --></label>
+        <name>Hosting_Platforms__c</name>
+        <picklistValues>
+            <masterLabel>Hybrid Hosting</masterLabel>
+            <translation><!-- Hybrid Hosting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Stack</masterLabel>
+            <translation><!-- Open Stack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Cloud</masterLabel>
+            <translation><!-- Private Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Cloud</masterLabel>
+            <translation><!-- Public Cloud --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How can we prove value to the customer on a regular basis? --></help>
+        <label><!-- How can we add value to their business --></label>
+        <name>How_can_we_add_value_to_their_business__c</name>
+    </fields>
+    <fields>
+        <label><!-- How do they make money and grow --></label>
+        <name>How_do_they_make_money_and_grow__c</name>
+    </fields>
+    <fields>
+        <label><!-- How do they use Rackspace --></label>
+        <name>How_do_they_use_Rackspace__c</name>
+    </fields>
+    <fields>
+        <help><!-- Have all IR&apos;s been updated and a regular review put in place? --></help>
+        <label><!-- IR&apos;s Updated --></label>
+        <name>IR_s_Updated__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Industry Information --></label>
+        <name>Industry_Information__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe the industry, issues, trends and standards. --></help>
+        <label><!-- Industry, Trends, Issues and Standards --></label>
+        <name>Industry_Trends_Issues_and_Standards__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are they able to influence IT strategy? Are they promoters or detractors? --></help>
+        <label><!-- Influencers --></label>
+        <name>Influencers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Have they gone through a server consolidation and virtualization process internally? If so, did they quantify the efficiencies realized? --></help>
+        <label><!-- Internal Consolidation --></label>
+        <name>Internal_Consolidation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Meeting Scheduled Date/Time --></label>
+        <name>Internal_Meeting_Scheduled_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Meeting Scheduled --></label>
+        <name>Internal_Meeting_Scheduled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do they want an internal private cloud for applications, data and workloads they do not want outside of their own facilities? --></help>
+        <label><!-- Internal Private Cloud --></label>
+        <name>Internal_Private_Cloud__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has your client notified you they are evaluating a competitor? --></help>
+        <label><!-- Is client evaluating a competitor --></label>
+        <name>Is_client_evaluating_a_competitor__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Key Business Problems --></label>
+        <name>Key_Business_Problems__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Client Sponsor --></label>
+        <name>Key_Client_Sponsor__c</name>
+        <relationshipLabel><!-- Account Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Key Projects Won --></label>
+        <name>Key_Projects_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Relationship Strategy --></label>
+        <name>Key_Relationship_Strategy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Case Study Date --></label>
+        <name>Last_Case_Study_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Customer Briefing Date --></label>
+        <name>Last_Customer_Briefing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last FY Account Sales --></label>
+        <name>Last_FY_Account_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last FY Product Sales --></label>
+        <name>Last_FY_Product_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last FY Services Sales --></label>
+        <name>Last_FY_Services_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Plan Revision --></label>
+        <name>Last_Plan_Revision__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Audit --></label>
+        <name>License_Audit__c</name>
+        <picklistValues>
+            <masterLabel>Over Billing</masterLabel>
+            <translation><!-- Over Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over Paying Microsoft</masterLabel>
+            <translation><!-- Over Paying Microsoft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Billing</masterLabel>
+            <translation><!-- Under Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Paying Microsoft</masterLabel>
+            <translation><!-- Under Paying Microsoft --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Load Balancer Audit --></label>
+        <name>Load_Balancer_Audit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Load Balancer Type --></label>
+        <name>Load_Balancer_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Memory --></label>
+        <name>Memory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which of these would be considered mission critical? --></help>
+        <label><!-- Mission Critical --></label>
+        <name>Mission_Critical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Project Implemented --></label>
+        <name>Most_Recent_Project_Implemented__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPS Score --></label>
+        <name>NPS_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPS Type --></label>
+        <name>NPS_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Areas to Develop --></label>
+        <name>New_Areas_to_Develop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Review Date --></label>
+        <name>Next_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Referrals and References --></label>
+        <name>Number_of_Referrals_and_References__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of VPN&apos;s --></label>
+        <name>Number_of_VPN_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offsite Tape Rotation --></label>
+        <name>Offsite_Tape_Rotation__c</name>
+        <picklistValues>
+            <masterLabel>2 week retention</masterLabel>
+            <translation><!-- 2 week retention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 week retention</masterLabel>
+            <translation><!-- 4 week retention --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do they implement open source technologies and support open standards? --></help>
+        <label><!-- Open Source --></label>
+        <name>Open_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please describe any other challenges or goals regarding data center and/or end user computing. --></help>
+        <label><!-- Other Challenges --></label>
+        <name>Other_Challenges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overview of Support Environment --></label>
+        <name>Overview_of_Support_Environment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment History --></label>
+        <name>Payment_History__c</name>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late Payment</masterLabel>
+            <translation><!-- Late Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspension Notices</masterLabel>
+            <translation><!-- Suspension Notices --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Plan FY Account Sales Goal --></label>
+        <name>Plan_FY_Account_Sales_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan FY Product Sales Goal --></label>
+        <name>Plan_FY_Product_Sales_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan FY Services Sales Goal --></label>
+        <name>Plan_FY_Services_Sales_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Status --></label>
+        <name>Plan_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ongoing Project</masterLabel>
+            <translation><!-- Ongoing Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upcoming</masterLabel>
+            <translation><!-- Upcoming --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Planning Year --></label>
+        <name>Planning_Year__c</name>
+        <picklistValues>
+            <masterLabel>FY2005</masterLabel>
+            <translation><!-- FY2005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FY2006</masterLabel>
+            <translation><!-- FY2006 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FY2007</masterLabel>
+            <translation><!-- FY2007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FY2008</masterLabel>
+            <translation><!-- FY2008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FY2009</masterLabel>
+            <translation><!-- FY2009 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FY2010</masterLabel>
+            <translation><!-- FY2010 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Are we in positioned to capture more of their business in the future? --></help>
+        <label><!-- Positioned to capture more business --></label>
+        <name>Positioned_to_capture_more_business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Barriers --></label>
+        <name>Potential_Barriers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which Hosting company did they come from. Ensure you select the account type &quot;competitor&quot; --></help>
+        <label><!-- Previous Hosting company --></label>
+        <name>Previous_Hosting_company__c</name>
+        <relationshipLabel><!-- Acct Plans (Previous Hosting company) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Did they have a Strategy for the last 6 – 12 months? What were major initiatives? Were they achieved? --></help>
+        <label><!-- Previous Strategy --></label>
+        <name>Previous_Strategy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel><!-- Acct Plans (Primary Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Processor --></label>
+        <name>Processor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Sales Growth --></label>
+        <name>Product_Sales_Growth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products --></label>
+        <name>Products__c</name>
+        <picklistValues>
+            <masterLabel>Exchange</masterLabel>
+            <translation><!-- Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FW</masterLabel>
+            <translation><!-- FW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SQL</masterLabel>
+            <translation><!-- SQL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sharepoint</masterLabel>
+            <translation><!-- Sharepoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iMail</masterLabel>
+            <translation><!-- iMail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What products services are they considering using in the upcoming fiscal year? --></help>
+        <label><!-- Projected Products &amp; Services --></label>
+        <name>Projected_Products_Services__c</name>
+    </fields>
+    <fields>
+        <help><!-- What percent is RAX of your overall IT budget? --></help>
+        <label><!-- RAX % of your overall IT budget --></label>
+        <name>RAX_of_your_overall_IT_budget__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has your client notified you RAX is too expensive? --></help>
+        <label><!-- RAX too expensive? --></label>
+        <name>RAX_too_expensive__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How does the websites assist in meeting business goals? --></help>
+        <label><!-- RS Web Presence and Customer Portal --></label>
+        <name>RS_Web_Presence_and_Customer_Portal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rackspace Products --></label>
+        <name>Rackspace_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rackspace migration help needed --></label>
+        <name>Rackspace_migration_help_needed__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the reason for this Strategy Workshop? --></help>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Overview --></label>
+        <name>Relationship_Overview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Details --></label>
+        <name>Risk_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Reason --></label>
+        <name>Risk_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Acquisition</masterLabel>
+            <translation><!-- Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Hardship</masterLabel>
+            <translation><!-- Financial Hardship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSA/SLA</masterLabel>
+            <translation><!-- MSA/SLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Contract</masterLabel>
+            <translation><!-- Out of Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repeat Support Failures</masterLabel>
+            <translation><!-- Repeat Support Failures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Limitations</masterLabel>
+            <translation><!-- Technical Limitations --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SE Assigned --></label>
+        <name>SE_Assigned__c</name>
+        <relationshipLabel><!-- Acct Plans (SE Assigned) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SaaS --></label>
+        <name>SaaS__c</name>
+        <picklistValues>
+            <masterLabel>Hosted Email/Exchange</masterLabel>
+            <translation><!-- Hosted Email/Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SharePoint</masterLabel>
+            <translation><!-- SharePoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VHD</masterLabel>
+            <translation><!-- VHD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Services Sales Growth --></label>
+        <name>Services_Sales_Growth__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many servers are in each environment? Unix, Windows, Linux? --></help>
+        <label><!-- Size --></label>
+        <name>Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strengths to Leverage --></label>
+        <name>Strengths_to_Leverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support --></label>
+        <name>Support__c</name>
+    </fields>
+    <fields>
+        <help><!-- (i.e. optimize backup, migrate to W2K8, etc.) --></help>
+        <label><!-- Technical Account Goals --></label>
+        <name>Technical_Account_Goals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Decision Maker --></label>
+        <name>Technical_Decision_Maker__c</name>
+        <relationshipLabel><!-- Acct Plans (Technical Decision Maker) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Technical Overview --></label>
+        <name>Technical_Overview__c</name>
+        <relationshipLabel><!-- Acct Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- what technologies are you focused on/interested in? --></help>
+        <label><!-- Technologies focused/interested in? --></label>
+        <name>Technologies_focused_interested_in__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Aspects of Support --></label>
+        <name>Unique_Aspects_of_Support__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unsat Tickets --></label>
+        <name>Unsat_Tickets__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Upgrades per Year --></help>
+        <label><!-- Upgrades --></label>
+        <name>Upgrades__c</name>
+    </fields>
+    <fields>
+        <label><!-- VPN --></label>
+        <name>VPN__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value Added Services --></label>
+        <name>Value_Added_Services__c</name>
+        <picklistValues>
+            <masterLabel>Data Assurance</masterLabel>
+            <translation><!-- Data Assurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Center Migration/Consolidation</masterLabel>
+            <translation><!-- Data Center Migration/Consolidation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disaster Recovery</masterLabel>
+            <translation><!-- Disaster Recovery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Commerce Compute</masterLabel>
+            <translation><!-- E-Commerce Compute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISV to SaaS Enablement</masterLabel>
+            <translation><!-- ISV to SaaS Enablement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Optimization</masterLabel>
+            <translation><!-- IT Optimization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Service Management</masterLabel>
+            <translation><!-- IT Service Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mission Critical Web Applications</masterLabel>
+            <translation><!-- Mission Critical Web Applications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Design</masterLabel>
+            <translation><!-- Network Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security/Compliance</masterLabel>
+            <translation><!-- Security/Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Storage Design</masterLabel>
+            <translation><!-- Storage Design --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Verbatim --></label>
+        <name>Verbatim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verbatims Mentions Pricing --></label>
+        <name>Verbatims_Mentions_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Virtualization Assessment Date --></label>
+        <name>Virtualization_Assessment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weighted Total % Wallet --></label>
+        <name>Weighted_Total_Wallet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Examples: customer facing website, back office applications, customer portal, etc. --></help>
+        <label><!-- What are we hosting for this customer --></label>
+        <name>What_are_we_hosting_for_this_customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are they focused on cost, uptime, other? --></help>
+        <label><!-- What drives decision making --></label>
+        <name>What_drives_decision_making__c</name>
+    </fields>
+    <fields>
+        <label><!-- What is your budget? --></label>
+        <name>What_is_your_budget__c</name>
+    </fields>
+    <fields>
+        <help><!-- List times in customer’s history where we have gone above and beyond for them. --></help>
+        <label><!-- When have we saved this customer --></label>
+        <name>When_have_we_saved_this_customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who are the customers competitors --></label>
+        <name>Who_are_the_customers_competitors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Why did they choose us --></label>
+        <name>Why_did_they_choose_us__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workshop Scheduled Date/Time --></label>
+        <name>Workshop_Scheduled_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workshop Scheduled --></label>
+        <name>Workshop_Scheduled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is your current year budget growing or shrinking over the previous year? --></help>
+        <label><!-- YOY Budget --></label>
+        <name>YOY_Budget__c</name>
+        <picklistValues>
+            <masterLabel>Flat to Growing 5%</masterLabel>
+            <translation><!-- Flat to Growing 5% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growing 5% to 10%</masterLabel>
+            <translation><!-- Growing 5% to 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growing &gt; 10%</masterLabel>
+            <translation><!-- Growing &gt; 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shrinking 5% to 10%</masterLabel>
+            <translation><!-- Shrinking 5% to 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shrinking 5% to flat</masterLabel>
+            <translation><!-- Shrinking 5% to flat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shrinking &gt; 10%</masterLabel>
+            <translation><!-- Shrinking &gt; 10% --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>AE Account Plan Layout</layout>
+        <sections>
+            <label><!-- Account Action Plan --></label>
+            <section>Account Action Plan</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Relationship --></label>
+            <section>Customer Relationship</section>
+        </sections>
+        <sections>
+            <label><!-- Customer SWOT --></label>
+            <section>Customer SWOT</section>
+        </sections>
+        <sections>
+            <label><!-- Fanatical Support --></label>
+            <section>Fanatical Support</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Growth Plan --></label>
+            <section>Growth Plan</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Emerging MCR</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Device --></label>
+            <section>Device</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SFDC Acct Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Expertise --></label>
+            <section>Customer Expertise</section>
+        </sections>
+        <sections>
+            <label><!-- Fanatical Support --></label>
+            <section>Fanatical Support</section>
+        </sections>
+        <sections>
+            <label><!-- Growth Plan --></label>
+            <section>Growth Plan</section>
+        </sections>
+        <sections>
+            <label><!-- Key Company Relationships --></label>
+            <section>Key Company Relationships</section>
+        </sections>
+        <sections>
+            <label><!-- Plan Details --></label>
+            <section>Plan Details</section>
+        </sections>
+        <sections>
+            <label><!-- Risk Information --></label>
+            <section>Risk Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Workshop</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Planning &amp; Execution Workshop --></label>
+            <section>Planning &amp; Execution Workshop</section>
+        </sections>
+        <sections>
+            <label><!-- Qualification Questionnaire --></label>
+            <section>Qualification Questionnaire</section>
+        </sections>
+        <sections>
+            <label><!-- Workshop Outcome --></label>
+            <section>Workshop Outcome</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- AE Account Plan --></label>
+        <name>AE_Account_Plan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Account Plan --></label>
+        <name>Account_Plan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Emerging MCR --></label>
+        <name>Emerging_MCR</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Workshop --></label>
+        <name>Workshop</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Account_Research --></label>
+        <name>Account_Research</name>
+    </webLinks>
+</CustomObjectTranslation>

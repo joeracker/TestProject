@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Document / Track Progress During Escalation</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Support Escalations</relationshipLabel>
+        <relationshipName>Support_Escalations</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Action_Item_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Action Item 1</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Action_Item_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Action Item 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Action_Item_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Action Item 3</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Action_Item_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Action Item 4</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Action_Owner_1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Who will own this action item</inlineHelpText>
+        <label>Action Owner 1</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Support_Escalations1</relationshipName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Action_Owner_2__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Who will own this action item?</inlineHelpText>
+        <label>Action Owner 2</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Support_Escalations2</relationshipName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Action_Owner_3__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Who will own this action item?</inlineHelpText>
+        <label>Action Owner 3</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Support_Escalations3</relationshipName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Action_Owner_4__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Who will own this action item?</inlineHelpText>
+        <label>Action Owner 4</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Support_Escalations4</relationshipName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Action_Required_from_Sr_Leader__c</fullName>
+        <externalId>false</externalId>
+        <label>Action Required from Sr. Leader</label>
+        <length>700</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Brief_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Brief Description</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Completion_Date_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Completion Date 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Completion_Date_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Completion Date 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Completion_Date_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Completion Date 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Completion_Date_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Completion Date 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Memo_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Memo Details</label>
+        <length>700</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customer_Action_Items__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Identify Action Owner &amp; Completion Date</inlineHelpText>
+        <label>Customer Action Items</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customer_Irritant_Objective__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Irritant/Objective</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customer_s_Preferred_Contact_Method_Info__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer&apos;s Preferred Contact Method/Info</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Final_Remediation_Plans__c</fullName>
+        <externalId>false</externalId>
+        <label>Final Remediation Plans</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Incident_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Incident Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Incident_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Incident Level</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Stage 1 - Leadership Involvement Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stage 2 - Threatening to Leave Rackspace</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stage 3 - Threatening Litigation for Damages</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Incident_Report_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Incident Report Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Complete - Submitted to Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Leadership_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Leadership Level</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Team Lead</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sr Manager</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Leadership_Owner__c</fullName>
+        <externalId>false</externalId>
+        <label>Leadership Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Support_Escalations</relationshipName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Name_s_of_Customer_s_Involved__c</fullName>
+        <externalId>false</externalId>
+        <label>Name(s) of Customer(s) Involved</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Recommended_Remediation_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Recommended Remediation Plan</label>
+        <length>700</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Pending Leadership Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending Customer Response</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Was_the_Incident_Customer_Impacting__c</fullName>
+        <externalId>false</externalId>
+        <label>Was the Incident Customer Impacting?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>What_s_Been_Done_To_Resolve_Thus_Far__c</fullName>
+        <externalId>false</externalId>
+        <label>What&apos;s Been Done To Resolve Thus Far</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Support Escalation</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Account__c</columns>
+        <columns>Brief_Description__c</columns>
+        <columns>Incident_Date__c</columns>
+        <columns>Incident_Level__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Support Escalation Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Support Escalations</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Support_Escalation</fullName>
+        <active>true</active>
+        <label>Support Escalation</label>
+        <picklistValues>
+            <picklist>Incident_Level__c</picklist>
+            <values>
+                <fullName>Stage 1 - Leadership Involvement Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stage 2 - Threatening to Leave Rackspace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stage 3 - Threatening Litigation for Damages</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Incident_Report_Status__c</picklist>
+            <values>
+                <fullName>Complete - Submitted to Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Leadership_Level__c</picklist>
+            <values>
+                <fullName>CEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SVP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sr Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Pending Customer Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Leadership Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Was_the_Incident_Customer_Impacting__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

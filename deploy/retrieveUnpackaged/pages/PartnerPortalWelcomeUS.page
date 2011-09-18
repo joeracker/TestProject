@@ -1,0 +1,119 @@
+<apex:page sidebar="false" showheader="false" controller="UserProfileGetter">
+    <style>
+       
+       .img {
+        
+            background: url("{!URLFOR($Resource.splash2)}") bottom center no-repeat;
+       
+       }
+       
+       .welcome_marketingheaderimage {
+            width:30%;
+            padding:4px 0;
+       }
+       body{
+        /*
+            background-color: transparent;
+        */      
+        }
+        #intro {
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .text{
+            font-size: 12px;
+            text-align: top left;
+        }
+        
+        .list .headerRow th, .list .headerRow th a {
+            font-size: 12px;
+        }
+        
+        .list tr.even th, .list tr.odd th, .list tr.even td, .list tr.odd td {
+            font-size: 12px;
+        }
+        
+        .bPageBlock .pbTitle {
+            font-size: 12px;
+        }
+        
+        .bPageBlock .pbHeader { /*Header section*/
+            padding: 1px;
+        }
+        
+        h6{
+            color:#62ABFE;
+            font-family:Georgia,Palatino,Palatino Linotype,Times,Times New Roman,serif;
+            font-size:32px;
+            font-weight:normal;
+            letter-spacing:-0.5px;
+            margin-bottom:10px;
+    
+        }
+        
+        .feature-new {
+            background: url("{!URLFOR($Resource.splash2)}") no-repeat scroll right bottom #41464B;
+            height: 265px;
+            position: relative;
+        }
+        
+        .feature-new-content {
+            left: 20px;
+            position: absolute;
+            top: -20px;
+            width: 350px;
+        }
+        
+        .feature-new-content h2 {
+            color: #62ABFE;
+            font-family: Georgia,Palatino,Palatino Linotype,Times,Times New Roman,serif;
+            font-size: 32px;
+            font-weight: normal;
+            letter-spacing: -0.5px;
+            margin-bottom: 20px;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+        }
+        
+        .feature-new-content p {
+            color: #DDDDDD;
+            font-size: 16px;
+            line-height: 20px;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+        }
+    </style>
+    <form>
+        <table width="100%">
+            <tr>
+                <td>
+                    <span style="font-weight: normal; font-size: 32px; margin-bottom: 10px; color: #62ABFE; letter-spacing: -0.5px;">
+                        Rackspace Partner Portal
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="content">
+                        <div class="feature-new">
+                            <div class="feature-new-content">
+                                <div style="position: static;"><div class="region-label" style="display: none;"><a href="/partner/contentAdmin/show/4">Region 1</a></div>
+                                    <h2>Welcome</h2>
+                                    <apex:outputPanel id="pnlUS" rendered="{!isUS}">
+                                        <p>Welcome to the Rackspace Partner Program Portal where you can access a wealth of information, training and tools that empower you to offer your customers a broad portfolio of compute platforms. This portal will provide you with tools and resources that you need to begin taking advantage of all the benefits you’re entitled to as a valued channel partner. Please visit the  On-boarding section to fully understand the benefits of the Rackspace Partner Program.</p>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel id="pnlUK" rendered="{!isUK}">
+                                        <p>Welcome to the Rackspace Partner Network Portal, a community devoted to helping our Partners enhance and build their business. Inside you will find tools and resources to help you communicate the many advantages of your Rackspace partnership. Informative sales tools and industry specific campaign kits to help you generate leads are yours for the taking.  Please visit the On-boarding section to fully understand the benefits of the Rackspace Partner Network.</p>
+                                    </apex:outputPanel>         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myrs-rule-home">
+                            <hr/>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</apex:page>

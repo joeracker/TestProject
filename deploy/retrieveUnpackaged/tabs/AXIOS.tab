@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Rackspace Knowledge Base System</description>
+    <frameHeight>600</frameHeight>
+    <hasSidebar>true</hasSidebar>
+    <label>AXIOS</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom55: Books</motif>
+    <url>https://axios.rackspace.com:8443/login.action?os_destination=%2Fdisplay%2Fkdb&amp;username={!User.SSO_Username__c}</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

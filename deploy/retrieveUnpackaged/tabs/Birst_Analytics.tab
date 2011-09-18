@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>600</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>Birst Analytics</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom72: Helicopter</motif>
+    <url>https://login.bws.birst.com/AppExchangeSSO.aspx?serverurl={!API.Enterprise_Server_URL_140}&amp;sessionid={!API.Session_ID}&amp;module=dashboard&amp;hideNav=false&amp;BirstSpaceName=Sales&amp;useSFDCEmailForBirstUsername=true</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

@@ -1,0 +1,66 @@
+<apex:page controller="contentNewsAndUpdatesCtrl">
+	
+	<style>
+	
+		.body{
+			font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+		}
+	
+		.bPageBlock .pbBody {
+			padding: 2px 2px 2px;
+		}
+	
+		.newsupdateTable{
+			border-collapse: collapse;
+			border-style: solid;
+			font-size: 11px;
+		}
+	
+		.evenRow{
+			background-color: #F2F2F2;
+		}
+		
+		.oddRow{
+		
+		}
+	
+	</style>
+	
+	<apex:include pageName="submenu_marketing"></apex:include>
+	<br/><br/>
+	<span style="font-family: Georgia,Palatino,Palatino Linotype,Times,Times New Roman,serif; font-size:28px; color:#4C92E2">News &amp; Updates</span>
+	
+	<apex:outputPanel id="mainPnl" rendered="{!NOT(ISNULL(rssFeedList))}">
+	 	<table width="100%">
+	        <tr>
+	        	<td style="float: left; width: 500px;">
+				
+		        	<apex:pageBlock >
+			        	<apex:pageBlockTable value="{!rssFeedList}" var="rss" styleClass="newsupdateTable" rowClasses="oddRow, evenRow">
+			        		<apex:column >
+			        			<apex:outputPanel >
+			        				<a style="color: #4C92E2" target="_blank" href="{!rss.link}">{!rss.title}</a><br/>
+			        				{!rss.description}
+			        			</apex:outputPanel>
+			        		</apex:column>
+			        		<apex:column >
+			        			<apex:outputText value="{!rss.pubDate}"></apex:outputText>
+			        		</apex:column>
+			        	</apex:pageBlockTable>
+					</apex:pageBlock>
+	        	</td>
+		        <td style="vertical-align: top;">
+		        	<apex:include pageName="contentSideBar"></apex:include>
+		        </td>
+	   		</tr>
+	   </table>
+	</apex:outputPanel>
+	<apex:outputPanel rendered="{!ISNULL(rssFeedList)}">
+		<img src="{!$Resource.hr}" />
+		<span style="font-family: Georgia,Palatino,Palatino Linotype,Times,Times New Roman,serif; font-size:22px; color:#FF0000">
+			The requested page is not available. Sorry for the inconvenience.
+		</span>
+		<img src="{!$Resource.hr}" />
+	</apex:outputPanel>
+	
+</apex:page>

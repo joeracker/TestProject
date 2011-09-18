@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Issue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Issues</value>
+    </caseValues>
+    <fields>
+        <help><!-- Related Case that prompted issue or documenting detail work of issue. --></help>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Person whom you can contact for additional details. --></help>
+        <label><!-- POC --></label>
+        <name>POC__c</name>
+        <relationshipLabel><!-- Issues (POC) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Issue Description --></label>
+        <name>SFDC_Issue_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Name --></label>
+        <name>SFDC_Issue_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Priority --></label>
+        <name>SFDC_Issue_Priority__c</name>
+        <picklistValues>
+            <masterLabel>1 - Low</masterLabel>
+            <translation><!-- 1 - Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Medium</masterLabel>
+            <translation><!-- 2 - Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - High</masterLabel>
+            <translation><!-- 3 - High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Very Urgent</masterLabel>
+            <translation><!-- 4 - Very Urgent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Issue Status --></label>
+        <name>SFDC_Issue_Status__c</name>
+        <picklistValues>
+            <masterLabel>0 - Open</masterLabel>
+            <translation><!-- 0 - Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 - Being Addressed</masterLabel>
+            <translation><!-- 1 - Being Addressed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - In Escalation</masterLabel>
+            <translation><!-- 2 - In Escalation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Closed</masterLabel>
+            <translation><!-- 3 - Closed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>SFDC_Project__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Issue Owner --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Issues (Issue Owner) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Issue Layout</layout>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

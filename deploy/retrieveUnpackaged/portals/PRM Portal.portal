@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Portal xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <emailSenderAddress>channelpartners@rackspace.com</emailSenderAddress>
+    <emailSenderName>Rackspace Partner Network</emailSenderName>
+    <enableSelfCloseCase>false</enableSelfCloseCase>
+    <forgotPassTemplate>PartnerCommunications/PRMPartnerPortalResetPassword</forgotPassTemplate>
+    <isSelfRegistrationActivated>false</isSelfRegistrationActivated>
+    <newPassTemplate>PartnerCommunications/PRMPartnerPortalResetPassword</newPassTemplate>
+    <newUserTemplate>PartnerCommunications/PRMPartnerPortalNewUserLoginInformation</newUserTemplate>
+    <showActionConfirmation>false</showActionConfirmation>
+    <type>Partner</type>
+</Portal>

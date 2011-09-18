@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Shows the forecast defection churn amount by account - will have finalized checked when the churn has been processed</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Churn</relationshipLabel>
+        <relationshipName>Churn</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Churn_Date__c</fullName>
+        <description>shows the first of the month that the churn is expected</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Will always be the first day of the month the churn is expected.</inlineHelpText>
+        <label>Churn Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Memo__c</fullName>
+        <description>Shows the final Credit Memo deductions caused by Sales.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the final Credit Memo deductions caused by Sales.</inlineHelpText>
+        <label>Credit Memo</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Current_BDC__c</fullName>
+        <description>current BDC on account associated with Churn record</description>
+        <externalId>false</externalId>
+        <label>Current BDC</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Churn</relationshipName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Final_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>shows the finalized amount that churned</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the finalized amount of defection churn for the account.</inlineHelpText>
+        <label>Final Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Finalized__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>shows if the churn data has been finalized by operations</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This will be checked when the final amount has been finalized.</inlineHelpText>
+        <label>Finalized</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Month</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Probability__c</fullName>
+        <description>shows the % probability of the churn occurring</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the % probability that it will churn.</inlineHelpText>
+        <label>Probability %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Projected_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>this is the total that is projected to churn</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Projected amount to churn.</inlineHelpText>
+        <label>Projected Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <label>Churn</label>
+    <nameField>
+        <displayFormat>C-{000000000}</displayFormat>
+        <label>Churn Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Churn</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

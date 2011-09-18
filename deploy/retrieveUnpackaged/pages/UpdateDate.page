@@ -1,0 +1,36 @@
+<apex:page standardController="Opportunity"
+           recordSetVar="opportunties"
+           tabStyle="Opportunity" sidebar="true">
+ <apex:form >
+   <apex:pageBlock >
+     <apex:pageMessages />
+     <apex:pageBlockButtons >
+      <apex:commandButton value="Save"
+                          action="{!save}"/>
+      </apex:pageBlockButtons>
+      <apex:pageBlockTable value="{!selected}"
+                           var="opp">
+        <apex:column value="{!opp.name}"/>
+        <apex:column value="{!opp.Account.Name}"/>
+        <apex:column headervalue="Rep Rating">
+          <apex:inputField value="{!opp.Rep_Rating__c}"/>
+          </apex:column> 
+        <apex:column headervalue="Final Opportunity Type">
+          <apex:inputField value="{!opp.Final_Opportunity_Type__c}"/>
+          </apex:column> 
+        <apex:column headervalue="EVA Ratio">
+          <apex:inputField value="{!opp.EVA_Ratio__c}"/>
+          </apex:column>
+        <apex:column headervalue="Commission Role">
+          <apex:inputField value="{!opp.Commission_Role__c}"/>
+          </apex:column>
+        <apex:column headervalue="Stage">
+          <apex:inputField value="{!opp.stageName}"/>
+          </apex:column> 
+        <apex:column headervalue="Close Date">
+          <apex:inputField value="{!opp.closeDate}"/>
+        </apex:column>                         
+     </apex:pageBlockTable>
+    </apex:pageBlock>
+ </apex:form>
+</apex:page>

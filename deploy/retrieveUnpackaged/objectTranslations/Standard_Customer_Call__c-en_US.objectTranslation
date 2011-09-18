@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Standard Customer Call</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Standard Customer Call</value>
+    </caseValues>
+    <fields>
+        <label><!-- AC Notes --></label>
+        <name>AC_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Check Notes --></label>
+        <name>Account_Check_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Contact Notes --></label>
+        <name>Account_Contact_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Standard Customer Call --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Further explain the Account Reviews and establish when the Account Review will be held. --></help>
+        <label><!-- Account Reviews --></label>
+        <name>Account_Reviews__c</name>
+    </fields>
+    <fields>
+        <help><!-- This section will allow you to manage your account.  You can request upgrades to your servers, which will generate a ticket so your BDC can work to get you what you need. --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acct Number --></label>
+        <name>Acct_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Items --></label>
+        <name>Action_Items__c</name>
+    </fields>
+    <fields>
+        <help><!-- Outline an Action Plan if there are open issue. --></help>
+        <label><!-- Action Plan --></label>
+        <name>Action_Plan__c</name>
+    </fields>
+    <fields>
+        <help><!-- If not activated then either downgrade the device or proactively remind your customer that this is available to them. --></help>
+        <label><!-- Activated --></label>
+        <name>Activated__c</name>
+    </fields>
+    <fields>
+        <help><!-- If they are not listed on the account contact list then for security and protection of your information, we will not divulge any information. --></help>
+        <label><!-- Additional Contacts --></label>
+        <name>Additional_Contacts__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the customer is being billed for additional storage or Blackberry, does this match what they have requested (check ticket history)? --></help>
+        <label><!-- Additional Services --></label>
+        <name>Additional_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Addt Servers/Load Balancer --></label>
+        <name>Addt_Servers_Load_Balancer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do the servers have correct MB agents installed? --></help>
+        <label><!-- Agent --></label>
+        <name>Agent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance Notes --></label>
+        <name>Attendance_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check BW allowance per server.  If over 100GB check Navision info to make sure the BW allowance is inline with up/downgrades. --></help>
+        <label><!-- BW Allowance --></label>
+        <name>BW_Allowance__c</name>
+    </fields>
+    <fields>
+        <label><!-- BW Check Notes --></label>
+        <name>BW_Check_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bandwitdh Notes --></label>
+        <name>Bandwitdh_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- In the billing section you can submit payments, view invoices and review account transactions such as payments and credits. --></help>
+        <label><!-- Billing --></label>
+        <name>Billing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter in any Business or Industry Challenges that were reviewed during your call. --></help>
+        <label><!-- Business/Industry Challenges --></label>
+        <name>Business_Industry_Challenges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Duration --></label>
+        <name>Call_Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please include the Account Name and Month (Rackspace - July) --></help>
+        <label><!-- Call Name --></label>
+        <name>Call_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Validation of ticket number pending general release.
+Required:  ONLY WHEN Review Type = Proactive OR Meeting --></help>
+        <label><!-- Core Ticket Reference --></label>
+        <name>Core_Ticket_Reference__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pull MB configuration report and cross reference with core that correct servers are being backed up i.e. check the MBVS in core matches the report. --></help>
+        <label><!-- Correct Configuration --></label>
+        <name>Correct_Configuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Any updates in outstanding credit memos? --></help>
+        <label><!-- Credits --></label>
+        <name>Credits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Solution Notes --></label>
+        <name>Current_Solution_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer1 --></label>
+        <name>Customer1__c</name>
+        <relationshipLabel><!-- Standard Customer Call --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer2 --></label>
+        <name>Customer2__c</name>
+        <relationshipLabel><!-- Standard Customer Call (Contact2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer3 --></label>
+        <name>Customer3__c</name>
+        <relationshipLabel><!-- Standard Customer Call (Contact3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer4 --></label>
+        <name>Customer4__c</name>
+        <relationshipLabel><!-- Standard Customer Call (Contact4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer5 --></label>
+        <name>Customer5__c</name>
+        <relationshipLabel><!-- Standard Customer Call (Contact5) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer6 --></label>
+        <name>Customer6__c</name>
+        <relationshipLabel><!-- Standard Customer Call (Contact6) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Are all devices organized correctly? --></help>
+        <label><!-- Device Arrangement --></label>
+        <name>Device_Arrangement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check all devices are being billed for? --></help>
+        <label><!-- Device Billing --></label>
+        <name>Device_Billing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cross reference SKU changes with Navision info --></help>
+        <label><!-- Device Navision Check --></label>
+        <name>Device_Navision_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Notes --></label>
+        <name>Device_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Here is where you can view all servers and net devices and configuration details, view passwords and review/edit Emergency Instructions.  You can also review any IP’s assigned to those servers. --></help>
+        <label><!-- Devices --></label>
+        <name>Devices__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is our DNS tool that enables you to manage your DNS.  If a domain should need to be deleted you’ll need to notify us so we can take care of this for you. --></help>
+        <label><!-- Domain --></label>
+        <name>Domain__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please provide emergency instructions for Account and/or Server. --></help>
+        <label><!-- Emergency Instructions --></label>
+        <name>Emergency_Instructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Double check monitoring is enabled --></help>
+        <label><!-- Enabled --></label>
+        <name>Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- End of Call --></label>
+        <name>End_of_Call__c</name>
+    </fields>
+    <fields>
+        <help><!-- As a minimum make sure primary contact has all permissions, for the rest, amend to the best of your knowledge --></help>
+        <label><!-- Enterprise Permissions --></label>
+        <name>Enterprise_Permissions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expedite --></label>
+        <name>Expedite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Firewall/IDS --></label>
+        <name>Firewall_IDS__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Call --></label>
+        <name>First_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Notes --></label>
+        <name>General_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Go Live Date --></label>
+        <name>Go_Live_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter in the CORE number for the INS IMP Notes. --></help>
+        <label><!-- INS IMP Notes --></label>
+        <name>INS_IMP_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- IR/EI Notes --></label>
+        <name>IR_EI_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time will default to current time so please ensure you enter in the correct time for the call. --></help>
+        <label><!-- Imp Call Date (Opt1) --></label>
+        <name>Imp_Call_Date_Opt1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time will default to current time so please ensure you enter in the correct time for the call. --></help>
+        <label><!-- Imp Call Date (Opt2) --></label>
+        <name>Imp_Call_Date_Opt2__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time will default to current time so please ensure you enter in the correct time for the call. --></help>
+        <label><!-- Imp Call Date (Opt3) --></label>
+        <name>Imp_Call_Date_Opt3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the account have the correct MBU allowance, are they paying for it? --></help>
+        <label><!-- MBU Allowance --></label>
+        <name>MBU_Allowance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cross reference SKU changes with Navision info --></help>
+        <label><!-- MBU Navision Check --></label>
+        <name>MBU_Navision_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBU Notes --></label>
+        <name>MBU_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cross reference correct number of mailboxes with the monthly invoice --></help>
+        <label><!-- MMC Billing --></label>
+        <name>MMC_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailtrust --></label>
+        <name>Mailtrust__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managed Backup Config Notes --></label>
+        <name>Managed_Backup_Config_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managed Mail Notes --></label>
+        <name>Managed_Mail_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managed Monitoring Notes --></label>
+        <name>Managed_Monitoring_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter in the CORE number for the Master IMP Ticket. --></help>
+        <label><!-- Master IMP Ticket --></label>
+        <name>Master_IMP_Ticket__c</name>
+    </fields>
+    <fields>
+        <label><!-- Migration Server Notes --></label>
+        <name>Migration_Server_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monitoring Notes --></label>
+        <name>Monitoring_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are servers that are not being backed up legitimate? --></help>
+        <label><!-- No Backup Check --></label>
+        <name>No_Backup_Check__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are all devices marked online – complete? --></help>
+        <label><!-- Online Complete --></label>
+        <name>Online_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check all outstanding tickets and make sure they have been addressed. --></help>
+        <label><!-- Open Tickets --></label>
+        <name>Open_Tickets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Device Notes --></label>
+        <name>Other_Device_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- PCI Compliance --></label>
+        <name>PCI_Compliance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the service that the customer are not currently using, but could possibly benefit from and any notes based on your conversation with the customer. --></help>
+        <label><!-- Performance Notes --></label>
+        <name>Performance_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is PING enabled on all devices? --></help>
+        <label><!-- Ping Check --></label>
+        <name>Ping_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Growth --></label>
+        <name>Potential_Growth__c</name>
+    </fields>
+    <fields>
+        <label><!-- RS101 Call Date --></label>
+        <name>RS101_Call_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Racker1 --></label>
+        <name>Racker1__c</name>
+        <relationshipLabel><!-- Standard Customer Call (Racker1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Racker2 --></label>
+        <name>Racker2__c</name>
+        <relationshipLabel><!-- Standard Customer Call (Racker2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Racker3 --></label>
+        <name>Racker3__c</name>
+        <relationshipLabel><!-- Standard Customer Call (Racker3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Racker4 --></label>
+        <name>Racker4__c</name>
+        <relationshipLabel><!-- Standard Customer Call (Racker4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Racker5 --></label>
+        <name>Racker5__c</name>
+        <relationshipLabel><!-- Standard Customer Call (Racker5) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Racker6 --></label>
+        <name>Racker6__c</name>
+        <relationshipLabel><!-- Standard Customer Call (Racker6) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Renewal Wish List --></label>
+        <name>Renewal_Wish_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- We take a 3 tier approach to monitoring, as we discussed during implementation.  In this section you’ll find reports that contain monitoring data from the previous month. --></help>
+        <label><!-- Reports --></label>
+        <name>Reports__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Type --></label>
+        <name>Review_Type__c</name>
+        <picklistValues>
+            <masterLabel>Audit</masterLabel>
+            <translation><!-- Audit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting</masterLabel>
+            <translation><!-- Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proactive</masterLabel>
+            <translation><!-- Proactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Value --></label>
+        <name>Review_Value__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SSL Certificate --></label>
+        <name>SSL_Certificate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ensure SF contains as much up to date information on the account as possible. --></help>
+        <label><!-- Salesforce Update --></label>
+        <name>Salesforce_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- Obtain secret question/answer and explain purpose. --></help>
+        <label><!-- Security Question --></label>
+        <name>Security_Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Server Due Date --></label>
+        <name>Server_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Server Performance Notes --></label>
+        <name>Server_Performance_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cover any services that they aren&apos;t currently using, but could possibly benefit from. --></help>
+        <label><!-- Services Notes --></label>
+        <name>Services_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Here you can read more about a couple of our highlighted services.  If you’re interested in obtaining those please just let us know.  You can also view details regarding any SSL certs you might purchase through RS. --></help>
+        <label><!-- Services --></label>
+        <name>Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start of Call --></label>
+        <name>Start_of_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Both attached storage and cloud storage, via Mosso --></help>
+        <label><!-- Storage --></label>
+        <name>Storage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is correct support team assigned? UK M1 for Windows, UK M2 for Linux, and UK BDC assigned? --></help>
+        <label><!-- Support Team/BDC --></label>
+        <name>Support_Team_BDC__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is one of the most important sections in our portal.  This is where you can submit and review tickets.  This is our primary channel of communication so documentation of needs and changes are crucial to supporting you ‘round the clock. --></help>
+        <label><!-- Support --></label>
+        <name>Support__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket Number --></label>
+        <name>Ticket_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket Review Notes --></label>
+        <name>Ticket_Review_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timezone --></label>
+        <name>Timezone__c</name>
+        <picklistValues>
+            <masterLabel>BST</masterLabel>
+            <translation><!-- BST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CST</masterLabel>
+            <translation><!-- CST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EST</masterLabel>
+            <translation><!-- EST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GMT</masterLabel>
+            <translation><!-- GMT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MST</masterLabel>
+            <translation><!-- MST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PST</masterLabel>
+            <translation><!-- PST --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- URL Monitoring --></label>
+        <name>URL_Monitoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unmetered Managed Backup --></label>
+        <name>Unmetered_Managed_Backup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Other devices like for example router, switch or Google minis – are they being billed for, are they on the account as devices? --></help>
+        <label><!-- Verify Presence --></label>
+        <name>Verify_Presence__c</name>
+    </fields>
+    <fields>
+        <help><!-- Address any migration devices that have been tagged migration status for 2 months or more. --></help>
+        <label><!-- Verify Status --></label>
+        <name>Verify_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Virtualization --></label>
+        <name>Virtualization__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Audit - UK</layout>
+        <sections>
+            <label><!-- Account Checks --></label>
+            <section>Account Checks</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Notes --></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Bandwidth Checks --></label>
+            <section>Bandwidth Checks</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Device Checks --></label>
+            <section>Device Checks</section>
+        </sections>
+        <sections>
+            <label><!-- Managed Backup Checks --></label>
+            <section>Managed Backup Checks</section>
+        </sections>
+        <sections>
+            <label><!-- Managed Mail Checks --></label>
+            <section>Managed Mail Checks</section>
+        </sections>
+        <sections>
+            <label><!-- Managed Monitoring Checks --></label>
+            <section>Managed Monitoring Checks</section>
+        </sections>
+        <sections>
+            <label><!-- Migration Server Checks --></label>
+            <section>Migration Server Checks</section>
+        </sections>
+        <sections>
+            <label><!-- Other Device Checks --></label>
+            <section>Other Device Checks</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Review - UK</layout>
+        <sections>
+            <label><!-- Additional Notes --></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Attendee List --></label>
+            <section>Attendee List</section>
+        </sections>
+        <sections>
+            <label><!-- Company Overview/Information --></label>
+            <section>Company Overview/Information</section>
+        </sections>
+        <sections>
+            <label><!-- Current Solution --></label>
+            <section>Current Solution</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Open Issues --></label>
+            <section>Open Issues</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Implementation Call</layout>
+        <sections>
+            <label><!-- Additional Notes --></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Attendee List --></label>
+            <section>Attendee List</section>
+        </sections>
+        <sections>
+            <label><!-- Core Reference Items --></label>
+            <section>Core Reference Items</section>
+        </sections>
+        <sections>
+            <label><!-- Timeline --></label>
+            <section>Timeline</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MAR</layout>
+        <sections>
+            <label><!-- Account Contact Notes --></label>
+            <section>Account Contact Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Attendee List --></label>
+            <section>Attendee List</section>
+        </sections>
+        <sections>
+            <label><!-- Bandwitdh Notes --></label>
+            <section>Bandwitdh Notes</section>
+        </sections>
+        <sections>
+            <label><!-- General Notes --></label>
+            <section>General Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Immediate Reactions/Emergency Instructions --></label>
+            <section>Immediate Reactions/Emergency Instructions</section>
+        </sections>
+        <sections>
+            <label><!-- Managed Backup Config --></label>
+            <section>Managed Backup Config</section>
+        </sections>
+        <sections>
+            <label><!-- Monitoring Notes --></label>
+            <section>Monitoring Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Server Performance --></label>
+            <section>Server Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Ticket Review --></label>
+            <section>Ticket Review</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pulse Check</layout>
+        <sections>
+            <label><!-- Additional Notes --></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Service Notes --></label>
+            <section>Additional Service Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Services --></label>
+            <section>Additional Services</section>
+        </sections>
+        <sections>
+            <label><!-- Attendee List --></label>
+            <section>Attendee List</section>
+        </sections>
+        <sections>
+            <label><!-- Business Notes --></label>
+            <section>Business Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Open Issues --></label>
+            <section>Open Issues</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Notes --></label>
+            <section>Performance Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RS101</layout>
+        <sections>
+            <label><!-- Additional Notes --></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Attendee List --></label>
+            <section>Attendee List</section>
+        </sections>
+        <sections>
+            <label><!-- RS101 Checklist --></label>
+            <section>RS101 Checklist</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Warm Hand-Off</layout>
+        <sections>
+            <label><!-- Additional Notes --></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Attendee List --></label>
+            <section>Attendee List</section>
+        </sections>
+        <sections>
+            <label><!-- Imp Call Dates --></label>
+            <section>Imp Call Dates</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Account Audit - UK --></label>
+        <name>AccountAuditUK</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Account Review - UK --></label>
+        <name>AccountReviewUK</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Imp Call --></label>
+        <name>ImpCall</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MAR --></label>
+        <name>MAR</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pulse Check --></label>
+        <name>PulseCheck</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RS101 --></label>
+        <name>RS101</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Warm Hand-Off --></label>
+        <name>WarmHandOff</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please put in a value for &apos;End of Call&apos;. --></errorMessage>
+        <name>End_of_Call_is_reuired_before_closing_th</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Account_Research --></label>
+        <name>Account_Research</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Core_Ticket --></label>
+        <name>Create_Core_Ticket</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_New_Opportunity --></label>
+        <name>Create_New_Opportunity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_CORE_Ticket --></label>
+        <name>View_CORE_Ticket</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_INS_IMP --></label>
+        <name>View_INS_IMP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Master_IMP --></label>
+        <name>View_Master_IMP</name>
+    </webLinks>
+    <workflowTasks>
+        <description><!-- Create event and send outlook invite to customer with Implementation Agenda/Imp doc. --></description>
+        <name>CreateEventforforImpCallwithCustomer</name>
+        <subject><!-- Create Event for for Imp Call with Customer --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- This task is being generated for the AM to send the customer Rackspace contact information (SAS70). --></description>
+        <name>SendCustomerRackspacecontactinformation</name>
+        <subject><!-- Send Customer Rackspace contact information --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is the DW Report for the churn detail report.</description>
+    <frameHeight>600</frameHeight>
+    <hasSidebar>true</hasSidebar>
+    <label>DW Churn Detail Report</label>
+    <mobileReady>true</mobileReady>
+    <motif>Custom85: Real Estate Sign</motif>
+    <url>http://dwrs2005/ReportServer?%2f01+corporate%2f00+Corporate%2f003+Churn%2fChurn+Detail+with+30+Day&amp;rs:Command=Render&amp;rc:StyleSheet=SP_Full</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

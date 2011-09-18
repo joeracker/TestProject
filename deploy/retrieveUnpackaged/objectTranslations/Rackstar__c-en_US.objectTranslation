@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rackstar</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rackstars</value>
+    </caseValues>
+    <fields>
+        <help><!-- Attainment needed for Half. --></help>
+        <label><!-- Attainment Needed --></label>
+        <name>Attainment_Needed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Attainment % for half. --></help>
+        <label><!-- Attainment % --></label>
+        <name>Attainment_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attainment --></label>
+        <name>Attainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Required --></label>
+        <name>Percent_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota --></label>
+        <name>Quota__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Team --></label>
+        <name>User_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Rackstars --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

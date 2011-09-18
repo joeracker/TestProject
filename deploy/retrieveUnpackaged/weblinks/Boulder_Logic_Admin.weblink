@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <description>Boulder Logic Admins can use this link to go to the admin console.</description>
+    <displayType>link</displayType>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Boulder Logic Admin</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>https://www.boulderlogic.com/reference/myboulder.aspx?sid={!User.Session_ID}&amp;surl={!API.Enterprise_Server_URL_110}&amp;dest=BL_ADMIN</url>
+</CustomPageWebLink>

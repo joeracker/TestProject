@@ -1,0 +1,193 @@
+<apex:page controller="LeadCustomListViewCtrl" tabstyle="Lead">
+    <apex:sectionHeader title="My Partner Leads"/>
+
+    <script>
+        function paging(pageMark){
+            document.getElementById('{!$Component.mainForm.pageMark}').value = pageMark;
+            pageFunction();
+        }
+        
+        function callSearch(str){
+            document.getElementById('{!$Component.mainForm.hidSortField}').value = str;
+            setTimeout("pageSort()", 500);
+        }
+        
+        function delCall(leadId){
+            if(confirm("Are you sure?")){
+                document.getElementById('{!$Component.mainForm.delLead}').value = leadId;
+                delLeads();
+            }
+        }
+        
+        function openRecord(recId){
+            top.location.href = '/' + recId;
+        }
+        
+        function noenter(e){               
+                if(window.event){                    
+                    key = window.event.keyCode;     //IE               
+                } 
+                else{                    
+                    key = e.which;     //firefox               
+                }               
+                if(key == 13) {                    
+                    var ele=document.getElementById('page:crit:gobutton');                                                           
+                    ele.click();                     
+                    return false;               
+                } else{                    
+                    return true;               
+                }          
+            }     
+
+        
+    </script>
+
+    <apex:form id="mainForm">
+    <apex:pageBlock mode="maindetail" >
+    <table>
+    <tr>
+       <td align="left"> <apex:OutputLabel value="Name  " for="leadName" />
+         <apex:inputText value="{!leadName}" id="leadName"/> </td>
+         
+       <td align="left"> <apex:OutputLabel value="Company  " for="Company" />
+        <apex:inputText value="{!Company}" id="Company"/> </td>
+     </tr>
+     <tr>   
+       <td align="left"> <apex:outputLabel value="Lead Status " for="leadstatus" />
+         <apex:SelectList value="{!leadstatus}" id="leadstatus" size="1" >
+           <apex:SelectOptions value="{!statusValues}"/>
+         </apex:SelectList> </td>
+         
+        <td align="left"> <apex:outputLabel value="Lead Type " for="leadType" />
+         <apex:SelectList value="{!leadType}" id="leadType" size="1" >
+           <apex:SelectOptions value="{!TypeValues}"/>
+         </apex:SelectList> </td>
+       </tr> 
+        <tr> 
+        <td>
+        <apex:CommandButton value="Search" action="{!searchleads}" rerender="mainForm" />
+      
+        </td>
+        </tr>
+    </table>
+    </apex:pageBlock>
+
+        <apex:inputHidden id="pageMark" value="{!pageMark}"></apex:inputHidden>
+        <apex:actionFunction name="pageFunction" action="{!buildLeadMap}" rerender="mainForm"></apex:actionFunction>
+        
+       <apex:inputHidden id="hidSortField" value="{!sortField}"></apex:inputHidden>
+        <apex:actionFunction name="pageSort" action="{!searchLeads}" rerender="mainForm"></apex:actionFunction> 
+        
+        <apex:inputHidden id="delLead" value="{!leadID}"></apex:inputHidden>
+        <apex:actionFunction name="delLeads" action="{!DelLead}" rerender="mainForm"></apex:actionFunction>
+        
+        <apex:pageBlock id="pBlockNo" rendered="{!ISNULL(leadList)}">
+            <apex:outputLabel value="No records found."></apex:outputLabel>
+        </apex:pageBlock>
+        
+        <apex:pageBlock id="pBlock" rendered="{!NOT(ISNULL(leadList))}">
+            
+            <div class="bNext">
+                <div class="next">
+                    <apex:outputPanel rendered="{!showPrev}">
+                        <a href="javascript: paging('prev')"><b>&lt; Previous</b></a>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!OR(showPrev, showNext)}">
+                        |
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!showNext}">
+                        <a href="javascript: paging('next')"><b>Next &gt;</b></a>
+                    </apex:outputPanel>
+                </div>
+            </div>
+            
+            <br/>
+            <br/>
+            
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockTable title="Leads" value="{!leadlist}"  var="lead" id="pageb" >
+
+                <!--<apex:column headervalue="Action" width="50px">
+                        <apex:outputPanel >
+                            <apex:commandLink value="Edit" action="{!EditLead}">
+                                <apex:param name="VLeadId" value="{!lead.Id}" assignTo="{!leadID}"/>
+                            </apex:commandLink>
+                            <apex:outputLabel value=" | "></apex:outputLabel>
+                            <apex:commandLink value="Del" rerender="null" onclick="delCall('{!lead.Id}')">
+                            </apex:commandLink>
+                        </apex:outputPanel>
+                    </apex:column> -->
+
+                    <apex:column >
+                        <apex:facet name="header">
+                        <apex:commandLink action="{!searchleads}" value="Name{!IF(sortExpression=='name',IF(sortDirection='ASC NULLS FIRST','▼','▲'),'')}" reRender="pBlock"   >
+                            <apex:param value="name" name="column" assignTo="{!sortExpression}"> </apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                       
+                      <apex:commandLink value="{!lead.name}" onclick="openRecord('{!lead.id}')" rerender="null"></apex:commandLink> 
+                    </apex:column>
+
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!searchleads}" value="Company {!IF(sortExpression=='Company',IF(sortDirection='ASC NULLS FIRST','▼','▲'),'')}" reRender="pBlock"   >
+                            <apex:param value="Company" name="column" assignTo="{!sortExpression}"> </apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!lead.company}" />
+                    </apex:column>
+
+
+                    <apex:column >
+                        <apex:facet name="header">
+                        <apex:commandLink action="{!searchleads}" value="Region/State {!IF(sortExpression=='State',IF(sortDirection='ASC NULLS FIRST','▼','▲'),'')}" reRender="pBlock"   >
+                            <apex:param value="State" name="column" assignTo="{!sortExpression}"> </apex:param>
+                            </apex:commandLink>
+                          </apex:facet>
+                        <apex:outputText value="{!lead.state}" />
+                    </apex:column>
+
+                    <apex:column >
+                        <apex:facet name="header">
+                         <apex:commandLink action="{!searchleads}" value="Lead Status{!IF(sortExpression=='status',IF(sortDirection='ASC NULLS FIRST','▼','▲'),'')}" reRender="pBlock" >
+                             <apex:param value="status" name="column" assignTo="{!sortExpression}"> </apex:param>
+                           <!-- <apex:commandLink value="Lead Status" onclick="callSearch('status')" rerender="null"> --></apex:commandLink> 
+                        </apex:facet>
+                        <apex:outputText value="{!lead.status}" />
+                    </apex:column>
+
+                    <apex:column headervalue="Lead Type">
+                        <apex:facet name="header">
+                        <apex:commandLink action="{!searchleads}" value="Lead Type{!IF(sortExpression=='Lead_Type__c',IF(sortDirection='ASC NULLS FIRST','▼','▲'),'')}" reRender="pBlock"   >
+                            <apex:param value="Lead_Type__c" name="column" assignTo="{!sortExpression}"> </apex:param>
+                            </apex:commandLink>
+                        <!--    <apex:commandLink value="Lead Type" onclick="callSearch('Lead_Type__c')" rerender="null"></apex:commandLink> -->
+                        </apex:facet>
+                        <apex:outputText value="{!lead.Lead_Type__c}" />
+                    </apex:column>
+
+                    <apex:column >
+                        <apex:facet name="header">
+                        <apex:commandLink action="{!searchleads}" value="Created Date{!IF(sortExpression=='createddate',IF(sortDirection='ASC NULLS FIRST','▼','▲'),'')}" reRender="pBlock" >
+                             <apex:param value="createddate" name="column" assignTo="{!sortExpression}"> </apex:param>
+                           <!-- <apex:commandLink value="Created Date"  > --></apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!lead.createddate}" />
+                    </apex:column>
+
+                    <apex:column >
+                        <apex:facet name="header">
+                        <apex:commandLink action="{!searchleads}" value="Email {!IF(sortExpression=='Email',IF(sortDirection='ASC NULLS FIRST','▼','▲'),'')}" reRender="pBlock"   >
+                            <apex:param value="Email" name="column" assignTo="{!sortExpression}"> </apex:param>
+                            </apex:commandLink>
+                           <!--  <apex:commandLink value="Email" onclick="callSearch('email')" rerender="null"></apex:commandLink> -->
+                        </apex:facet>
+                        <apex:outputField value="{!lead.email}" />
+                      <!-- <apex:outputField value="{!IF(lead.email != '', lead.email, ' ')}" />-->
+                    </apex:column>
+
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

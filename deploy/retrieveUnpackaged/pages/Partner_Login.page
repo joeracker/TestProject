@@ -1,0 +1,304 @@
+<apex:page showHeader="false" sidebar="False" controller="PartnerLoginCtrl">
+<html>
+<head>
+<title>Rackspace Partner Portal</title>
+
+
+<!-- Web2Case BEGIN -->
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8" />
+        <apex:stylesheet value="{!$Resource.CSScaseHelp}"/>
+        <apex:includeScript value="{!$Resource.JSJquery}"/>
+        <apex:includeScript value="{!$Resource.JSCaseHelp}"/>
+<!-- Web2Case End -->
+
+</head>
+<style type="text/css">
+body
+{
+background-color:"#D6D6CD";
+}
+
+table.board
+{
+border-style:solid;
+border-width:2px;
+border-right-width:2px;
+padding-top:25px;
+-moz-border-radius: 1em;
+
+}
+
+.center
+{
+position:absolute;
+top:145px;
+right:470px;
+width:40%;
+}
+
+.pic
+{
+position:absolute;
+top:115px;
+right:630px;
+width:40%;
+
+}
+
+.banner
+{
+position:absolute;
+top:50px;
+right:470px;
+width:40%;
+}
+.about
+{
+text-align:justify;
+}
+
+.login
+{
+position:absolute;
+top:185px;
+right:45px;
+width:40%;
+}
+
+.footDiv{
+    font-size: 10px;
+}
+</style>
+<script type="text/javascript">
+
+
+function checkUserName()
+{
+    var x=document.forms["j_id0:frmMain"]["j_id0:frmMain:username"].value
+    var atpos=x.indexOf("@");
+    var dotpos=x.lastIndexOf(".");
+    var prmpos=x.lastIndexOf(".raxprm");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length || prmpos<1)
+      {
+      alert("Username must be in the format of 'name@domain.com.raxprm'.");
+      return false;
+  }
+}
+
+</script>
+<div class="banner">
+    <img src="{!URLFOR($Resource.Rackspace_banner)}" align="left"/>
+</div>
+
+<div class="pic">
+    <img src="{!URLFOR($Resource.ppbg)}" align="left"/>
+</div>
+<div class="mainT">
+    <table width="750" height="200" align="left" bgcolor="#FFFFFF">
+        <td>
+            <div class="center">
+                    <table class="board" width="750" height="200" align="left" bgcolor="#FFFFFF">
+                             <td>
+                                  <table width="400" height="200" align="left" bgcolor="#FFFFFF">
+                                        
+                                        <td class="about">
+                                  
+                                            <font color="#858580">If this is your first time logging in please refer to the "Welcome to the Rackspace&#174; Partner Program" email from <a href="mailto:{!contactUsAddress}">{!contactUsAddress}</a> to retrieve your user name and temporary password.  Your user name is your email address plus “.raxprm”, i.e.<u>joe.racker@rackspace.com.raxprm</u>.
+                                            <br/><br/>
+                                            Please note that you will have 48 hours to authenticate your username for portal access once you have received the "Welcome" email. If you cannot retrieve or access your original "Welcome" email, please click "Forgot your Password" to trigger new login credentials. <br/><br/> 
+                                            <div style="text-align: left;">
+                                               <!-- Web2Case link Begin -->
+                                               <a href="#dialog" name="modal">Need help?</a>
+                                               <!-- Web2Case link End -->
+                                            </div>
+                                            </font>
+                                         
+                                            
+                                        </td>
+                                  </table>
+                            </td>
+                    </table>
+            </div>
+        </td>
+        <td>
+            <div class="login">
+                <table cellspacing="0" cellpadding="0" border="0" class="bPageBlock" id="loginBox">
+                    <tbody>
+                        <tr valign="top">
+                            <td>
+                                <apex:form id="frmMain" forceSSL="true" onSubmit="return checkUserName()">
+                                    
+                                    <apex:inputHidden id="urlHid" value="{!urlStr}"></apex:inputHidden>
+                                    
+                                    <input type="hidden" value="true" name="useSecure"/> 
+                                    <!-- SANDBOX --> 
+                                    <input type="hidden" value="00DP000000070cE" name="orgId"/> 
+                                    <input type="hidden" value="06050000000D4ep" name="portalId"/>
+                                    
+                                    <!--PRODUCTION
+                                    <input type="hidden" value="00D500000006pEz" name="orgId"/>
+                                    <input type="hidden" value="06050000000D4ep" name="portalId"/>
+                                    --> 
+                                    <input type="hidden" value="3" name="loginType"/> <input type="hidden" value="loginAction" name="action"/>
+                    
+                                    <div class="pbHeader">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="pbTitle">
+                                                    <h2>Secure Customer Login
+                                                    </h2>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    <div class="pbBody">
+                                        <div class="errorMsg">
+                                            Please enter your User Name.
+                                        </div>
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="portalLoginLabel"><label for="username">User Name:
+                                                </label></td>
+                                                <td>
+                                                    <apex:inputText id="username" value="{!username}"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="portalLoginLabel"><label for="password">Password:
+                                                </label></td>
+                                                <td>
+                                                    <apex:inputSecret id="password" value="{!password}"/>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <div id="divforgotUS">
+                                            <!-- SANDBOX US --> 
+                                            <apex:outputLink value="{!$Page.ForgotPassword}"> Forgot your password? </apex:outputLink>
+                                            
+                                            <!-- PRODUCTION US
+                                            <apex:outputLink value="{!$Page.ForgotPassword}"> Forgot your password? </apex:outputLink>
+                                            -->
+                                        </div>
+                                        <div id="divforgotUK">
+                                            <!-- SANDBOX UK -->
+                                            <apex:outputLink value="{!$Page.ForgotPassword}"> Forgot your password? </apex:outputLink>
+                                            
+                                            <!-- PRODUCTION UK
+                                            <apex:outputLink value="{!$Page.ForgotPassword}"> Forgot your password? </apex:outputLink>
+                                            -->
+                                        </div>
+                                    </div>
+                                    <div class="pbBottomButtons" style="padding: 6px 20px 4px;" >
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="pbTitle"><img height="1" width="1" src="/s.gif" alt="" class="minWidth" title=""/></td>
+                                                <apex:commandButton action="{!loginToPortal}" value="Login" id="loginButton"/>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    <script>
+                                        var urlStr  = top.location.href;
+                                        var urlType = urlStr.substr(urlStr.lastIndexOf('/') + 1, urlStr.length);
+                                        document.getElementById('{!$Component.frmMain.urlHid}').value = urlType;
+                                        if(urlType == 'us'){
+                                            document.getElementById('divforgotUK').style.display = 'none';
+                                        }
+                                        else{
+                                            document.getElementById('divforgotUS').style.display = 'none';
+                                        }
+                                    </script>
+                                </apex:form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="footDiv">
+                    Please click <a href="https://login.salesforce.com/help/doc/en/faq_getstart_what_browsers_does.htm?fromSearch=true" target="_blank">here</a> to see a list of supported browsers.
+                </div>
+            </div>
+            </td>
+        </table>
+    </div>
+    
+            <!-- Web 2 Case Form -->
+        <div id="boxes">
+            <div id="dialog" class="window">
+                <p><strong>Having problems logging in? We can help!</strong></p>
+                <!-- close button is defined as close class -->
+
+                <form action="https://cs4.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+                <input type="hidden" name="orgid" value="00DP000000070cE" />
+                <input type="hidden" name="retURL" value="http://rackspace.com" />
+
+                <!--  ----------------------------------------------------------------------  -->
+                <!--  NOTE: These fields are optional debugging elements.  Please uncomment   -->
+                <!--  these lines if you wish to test in debug mode.                          -->
+                <!--  <input type="hidden" name="debug" value=1>                              -->
+                <!--  <input type="hidden" name="debugEmail"                                  -->
+                <!--  value="abhilasha.gupta@rackspace.com">                                  -->
+                <!--  ----------------------------------------------------------------------  -->
+
+                <div>
+                    <label for="name">Name</label> <br />
+                    <input  id="name" maxlength="80" name="name" size="20" type="text" />
+                </div>
+                  <div>
+                    <label for="email">Email</label><br />
+                    <input  id="email" maxlength="80" name="email" size="20" type="text" />
+                </div>
+                <div>
+                    <label for="phone">Phone</label><br />
+                    <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+                </div>
+                <div>
+                    <label for="company">Company</label><br />
+                    <input  id="company" maxlength="80" name="company" size="20" type="text" />
+                </div>
+           
+                <div style="margin-top:10px;" >
+               <!--  <label for ="00N50000002dXoo" > Name </label><br/><input  id="00N50000002dXoo" maxlength="100" name="00N50000002dXoo" size="20" type="text" /> -->
+
+          <!--      Portal Phone Number:<input  id="00N50000002dXoy" maxlength="40" name="00N50000002dXoy" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" /><br> -->
+                </div>
+
+                <div style="margin-top: 10px">
+<!-- This is the Dev Instance, Update for Production -->
+                    <label for="00N50000001nfND">Issue:</label><br />
+                    <select  id="00N50000001nfND" name="00N50000001nfND" title="Case Type"><option value="">--None--</option>
+                        <option value="Did not receive login credentials">Did not receive login credentials</option>
+                        <option value="Error Message">Error Message</option>
+                    </select>
+                </div>
+                
+              
+
+                <div style="margin-top:10px;">
+                    <label for="description">Description</label><br />
+                    <textarea cols="45" rows="8" name="description"></textarea><br />
+                </div>
+                <div>
+                    <select  id="recordType" name="recordType" style="display:none;"> 
+                    <option value="012500000005R69">Partner Portal</option>
+
+                     </select><br />  
+                    <select  id="reason" name="reason" style="display:none;">
+                        <option selected="selected" value="Login Issues">Login Issues</option>
+                    </select>
+                    <input type="hidden"  id="external" name="external" value="1" /><br />
+                    <input type="submit" name="submit" value="Get Help" /> | <a href="#" class="close">Cancel</a>
+                </div>
+
+
+                
+                </form>
+            </div>
+            <!-- Do not remove div#mask, because you'll need it to fill the whole screen --> 
+            <div id="mask"></div>
+        </div>
+<!-- end Web2Case Form -->
+    
+          
+</html>
+</apex:page>

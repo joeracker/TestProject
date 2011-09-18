@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Sales Process</label>
+            <name>Sales_Process</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Support Process</label>
+            <name>Support_Process</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Salesforce</label>
+            <name>Salesforce</name>
+        </dataCategory>
+        <dataCategory>
+            <label>SE</label>
+            <name>SE</name>
+        </dataCategory>
+        <dataCategory>
+            <label>RES</label>
+            <name>RES</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Internal</label>
+    <objectUsage>
+        <object>Question</object>
+    </objectUsage>
+</DataCategoryGroup>

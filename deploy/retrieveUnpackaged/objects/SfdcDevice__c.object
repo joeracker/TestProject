@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The devices that are associated to this opportunity.</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Batch_Fail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used for one time to load failures into Incent.</description>
+        <externalId>false</externalId>
+        <label>Batch Fail</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fail_Description__c</fullName>
+        <description>Denotes the description if the device failed reconcilliation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the description for why the device failed reconcilliation.</inlineHelpText>
+        <label>Fail Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Reconcile_Pass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes if the device passed the reconcilliation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows if the device passed the reconcilliation with Navision.</inlineHelpText>
+        <label>Reconcile Pass</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>data_center_name__c</fullName>
+        <description>Denotes the Data Center the device will go into.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Data Center the device will be in.</inlineHelpText>
+        <label>Data Center</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>device_number__c</fullName>
+        <description>Denotes the device number from CORE.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the device number from CORE.</inlineHelpText>
+        <label>Device Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>device_status__c</fullName>
+        <description>Denotes the status of the device.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the status of the device.</inlineHelpText>
+        <label>Device Status</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>due_to_customer__c</fullName>
+        <description>Denotes the date the device is due to the customer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the date the device is due to the customer.</inlineHelpText>
+        <label>Due to Customer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>mrr__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>Denotes the line item price for the device.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the line item price for the device.</inlineHelpText>
+        <label>MRR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>offline_date__c</fullName>
+        <description>Denotes the date the device went offline.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the date the device went offline.</inlineHelpText>
+        <label>Offline Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>online_date__c</fullName>
+        <description>Denotes the date the device went online.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the date the device went online.</inlineHelpText>
+        <label>Online Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>opportunity__c</fullName>
+        <description>Denotes the opportunity associated to this device.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the opportunity that is associated to the device.</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>SFDC Devices</relationshipLabel>
+        <relationshipName>Device</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>platform_name__c</fullName>
+        <description>Denotes the platform from CORE.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the platform for the device from CORE.</inlineHelpText>
+        <label>Platform</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>setup__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>Denotes the setup fee for line item pricing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the setup fee for line item pricing.</inlineHelpText>
+        <label>Setup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>status_number__c</fullName>
+        <description>Denotes the status number for the device.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the status number for the device.</inlineHelpText>
+        <label>Status Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SFDC Device</label>
+    <nameField>
+        <label>SFDC Device Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>SFDC Devices</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Support Escalation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Support Escalations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Support Escalations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Action Item 1 --></label>
+        <name>Action_Item_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Item 2 --></label>
+        <name>Action_Item_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Item 3 --></label>
+        <name>Action_Item_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Item 4 --></label>
+        <name>Action_Item_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who will own this action item --></help>
+        <label><!-- Action Owner 1 --></label>
+        <name>Action_Owner_1__c</name>
+        <relationshipLabel><!-- Support Escalations (Action Owner 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Who will own this action item? --></help>
+        <label><!-- Action Owner 2 --></label>
+        <name>Action_Owner_2__c</name>
+        <relationshipLabel><!-- Support Escalations (Action Owner 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Who will own this action item? --></help>
+        <label><!-- Action Owner 3 --></label>
+        <name>Action_Owner_3__c</name>
+        <relationshipLabel><!-- Support Escalations (Action Owner 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Who will own this action item? --></help>
+        <label><!-- Action Owner 4 --></label>
+        <name>Action_Owner_4__c</name>
+        <relationshipLabel><!-- Support Escalations (Action Owner 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Action Required from Sr. Leader --></label>
+        <name>Action_Required_from_Sr_Leader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brief Description --></label>
+        <name>Brief_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Date 1 --></label>
+        <name>Completion_Date_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Date 2 --></label>
+        <name>Completion_Date_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Date 3 --></label>
+        <name>Completion_Date_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Date 4 --></label>
+        <name>Completion_Date_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Memo Details --></label>
+        <name>Credit_Memo_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identify Action Owner &amp; Completion Date --></help>
+        <label><!-- Customer Action Items --></label>
+        <name>Customer_Action_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Irritant/Objective --></label>
+        <name>Customer_Irritant_Objective__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer&apos;s Preferred Contact Method/Info --></label>
+        <name>Customer_s_Preferred_Contact_Method_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Remediation Plans --></label>
+        <name>Final_Remediation_Plans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incident Date --></label>
+        <name>Incident_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incident Level --></label>
+        <name>Incident_Level__c</name>
+        <picklistValues>
+            <masterLabel>Stage 1 - Leadership Involvement Required</masterLabel>
+            <translation><!-- Stage 1 - Leadership Involvement Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage 2 - Threatening to Leave Rackspace</masterLabel>
+            <translation><!-- Stage 2 - Threatening to Leave Rackspace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage 3 - Threatening Litigation for Damages</masterLabel>
+            <translation><!-- Stage 3 - Threatening Litigation for Damages --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Incident Report Status --></label>
+        <name>Incident_Report_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete - Submitted to Customer</masterLabel>
+            <translation><!-- Complete - Submitted to Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation><!-- Not Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Leadership Level --></label>
+        <name>Leadership_Level__c</name>
+        <picklistValues>
+            <masterLabel>CEO</masterLabel>
+            <translation><!-- CEO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SVP</masterLabel>
+            <translation><!-- SVP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sr Manager</masterLabel>
+            <translation><!-- Sr Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Lead</masterLabel>
+            <translation><!-- Team Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP</masterLabel>
+            <translation><!-- VP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Leadership Owner --></label>
+        <name>Leadership_Owner__c</name>
+        <relationshipLabel><!-- Support Escalations (Leadership Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Name(s) of Customer(s) Involved --></label>
+        <name>Name_s_of_Customer_s_Involved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommended Remediation Plan --></label>
+        <name>Recommended_Remediation_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Pending Customer Response</masterLabel>
+            <translation><!-- Pending Customer Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Leadership Review</masterLabel>
+            <translation><!-- Pending Leadership Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Was the Incident Customer Impacting? --></label>
+        <name>Was_the_Incident_Customer_Impacting__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What&apos;s Been Done To Resolve Thus Far --></label>
+        <name>What_s_Been_Done_To_Resolve_Thus_Far__c</name>
+    </fields>
+    <layouts>
+        <layout>Support Escalation Layout</layout>
+        <sections>
+            <label><!-- Account Info --></label>
+            <section>Account Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Escalation Cause &amp; Details --></label>
+            <section>Escalation Cause &amp; Details</section>
+        </sections>
+        <sections>
+            <label><!-- Escalation Summary --></label>
+            <section>Escalation Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Post Customer Contact Steps --></label>
+            <section>Post Customer Contact Steps</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Support Escalation --></label>
+        <name>Support_Escalation</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

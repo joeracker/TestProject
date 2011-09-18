@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Portal xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>PRM portal for US Partners</description>
+    <emailSenderAddress>partnermarketing@rackspace.com</emailSenderAddress>
+    <emailSenderName>Rackspace Partner Program</emailSenderName>
+    <enableSelfCloseCase>false</enableSelfCloseCase>
+    <footerDocument>CustomerPortalImages/CustomerPortalFooterHTML.txt</footerDocument>
+    <forgotPassTemplate>PartnerCommunications/PRM_Partner_Portal_Reset_Password_Text_US</forgotPassTemplate>
+    <headerDocument>CustomerPortalImages/CustomerPortalHeaderHTML.htm</headerDocument>
+    <isSelfRegistrationActivated>false</isSelfRegistrationActivated>
+    <logoutUrl>http://rackspacepartner.core.cs4.force.com/us</logoutUrl>
+    <newPassTemplate>PartnerCommunications/PRM_Partner_Portal_Reset_Password_Text_US</newPassTemplate>
+    <newUserTemplate>PartnerCommunications/Final_Partner_PRM_Welcome</newUserTemplate>
+    <showActionConfirmation>true</showActionConfirmation>
+    <type>Partner</type>
+</Portal>

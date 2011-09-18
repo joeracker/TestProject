@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Referral to Partner</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Referrals to Partner</value>
+    </caseValues>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Referrals to Partner --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Link the partner that is being referred to the opportunity. --></help>
+        <label><!-- Partner Account --></label>
+        <name>Partner_Account__c</name>
+        <relationshipLabel><!-- Referrals to Partner --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Referral to Partner Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must link a Partner Account only. --></errorMessage>
+        <name>Must_be_a_partner_account</name>
+    </validationRules>
+</CustomObjectTranslation>

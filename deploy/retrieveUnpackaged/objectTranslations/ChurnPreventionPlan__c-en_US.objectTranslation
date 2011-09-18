@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Churn Prevention Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Churn Prevention Plan</value>
+    </caseValues>
+    <fields>
+        <label><!-- AR Response --></label>
+        <name>ARResponse__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter your response to AR. --></help>
+        <label><!-- AR AM Response --></label>
+        <name>AR_AM_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- AR --></label>
+        <name>AR__c</name>
+    </fields>
+    <fields>
+        <help><!-- What lengths of contracts are they willing to sign? --></help>
+        <label><!-- Acceptable contract term --></label>
+        <name>Acceptable_contract_term__c</name>
+    </fields>
+    <fields>
+        <help><!-- copy/paste url into new window to open a ticket with Rack Law --></help>
+        <label><!-- Access to Rack Law --></label>
+        <name>Access_to_Rack_Lay__c</name>
+        <picklistValues>
+            <masterLabel>https://www.rackspacelaw.com</masterLabel>
+            <translation><!-- https://www.rackspacelaw.com --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Acct Name --></label>
+        <name>Acct_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acct Number --></label>
+        <name>Acct_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- additional information provided to A/R --></help>
+        <label><!-- Additional Information --></label>
+        <name>AdditionalInformation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select all segments that were suggested as an alternative. --></help>
+        <label><!-- Alternative Segments --></label>
+        <name>Alternative_Segments__c</name>
+        <picklistValues>
+            <masterLabel>Cloud Files</masterLabel>
+            <translation><!-- Cloud Files --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud Servers</masterLabel>
+            <translation><!-- Cloud Servers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud Sites</masterLabel>
+            <translation><!-- Cloud Sites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intensive</masterLabel>
+            <translation><!-- Intensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managed</masterLabel>
+            <translation><!-- Managed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform</masterLabel>
+            <translation><!-- Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtualization</masterLabel>
+            <translation><!-- Virtualization --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Can the customer provide all licensing needs beyond the OS? --></help>
+        <label><!-- Any licensing needs beyond the OS? --></label>
+        <name>Any_licensing_needs_beyond_the_OS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Are there over 8 servers? --></label>
+        <name>Are_there_over_8_servers__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- IF NO THEN PLATFORM IS NOT AN OPTION --></help>
+        <label><!-- At least 5 servers --></label>
+        <name>At_least_5_servers__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Name of BDC who compiled config/capex in Master Pricing Tool. --></help>
+        <label><!-- BDC Name --></label>
+        <name>BDC_Name__c</name>
+        <relationshipLabel><!-- Churn Prevention Plan (BDC Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This information is sent via eConnect from AR and is read only to others. --></help>
+        <label><!-- Bankruptcy Filings --></label>
+        <name>BankruptcyFilings__c</name>
+    </fields>
+    <fields>
+        <label><!-- CLOUD --></label>
+        <name>CLOUD__c</name>
+    </fields>
+    <fields>
+        <label><!-- CMRR --></label>
+        <name>CMRR__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPP Approved --></label>
+        <name>CPP_Approved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Can Customer support all aspects of networking? --></help>
+        <label><!-- Can Customer support network? --></label>
+        <name>Can_Customer_support_network__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Does this customer have the resources and expertise to manage all backups? --></help>
+        <label><!-- Can customer manage all backups? --></label>
+        <name>Can_customer_manage_all_backups__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Can customer respond to all applications issues 24/7? --></help>
+        <label><!-- Can customer respond to app issues 24/7? --></label>
+        <name>Can_customer_respond_to_app_issues_24_7__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Does the customer have the capability to fully support the OS? --></help>
+        <label><!-- Capability to fully support OS? --></label>
+        <name>Capability_to_fully_support_OS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Churn Amount --></label>
+        <name>Churn_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Churn Probability --></label>
+        <name>Churn_Probability__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter your response to Cloud. --></help>
+        <label><!-- Cloud AM Response --></label>
+        <name>Cloud_AM_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloud Response --></label>
+        <name>Cloud_Response__c</name>
+    </fields>
+    <fields>
+        <help><!-- What additional data do we have about the competitor? --></help>
+        <label><!-- Competitor Details --></label>
+        <name>Competitor_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Name --></label>
+        <name>Competitor_Name__c</name>
+        <relationshipLabel><!-- Churn Prevention Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Has the BDC compiled config and capex for this account in the Master Pricing Tool? If No, this must be done first. --></help>
+        <label><!-- Compiled config/capex in pricing tool? --></label>
+        <name>Compiled_config_capex_in_pricing_tool__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Confirmed Amount --></label>
+        <name>Confirmed_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This information comes via eConnect and is read only to others. --></help>
+        <label><!-- Credit Check --></label>
+        <name>CreditCheck__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the customer&apos;s plan for the future with Rackspace? --></help>
+        <label><!-- Customer&apos;s future plan with Rackspace? --></label>
+        <name>Customer_s_future_plan_with_Rackspace__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has the customer provided us with a target price for future 
+Invoice? --></help>
+        <label><!-- Customer&apos;s target price point? --></label>
+        <name>Customer_s_target_price_point__c</name>
+    </fields>
+    <fields>
+        <help><!-- List the devices being decommissioned. --></help>
+        <label><!-- Decommissioned Devices --></label>
+        <name>Decommissioned_Devices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Devices being added? --></label>
+        <name>Devices_being_added__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Devices being decommissioned? --></label>
+        <name>Devices_being_decommissioned__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Have you double checked the configuration in CORE to ensure accuracy (eg. Licensing, bandwidth, specs)? --></help>
+        <label><!-- Double Check Configuration in CORE --></label>
+        <name>Double_Check_Configuration_in_CORE__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please explain why there&apos;s a difference between the two. --></help>
+        <label><!-- Explain MRR and Invoice difference --></label>
+        <name>Explain_MRR_and_Invoice_difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- FINANCE --></label>
+        <name>FINANCE__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter your response to Finance. --></help>
+        <label><!-- Finance AM Response --></label>
+        <name>Finance_AM_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Response --></label>
+        <name>Finance_Response__c</name>
+    </fields>
+    <fields>
+        <help><!-- Have they been forced to deploy additional servers based on the amount of files they store? --></help>
+        <label><!-- Forced to deploy additional servers? --></label>
+        <name>Forced_to_deploy_additional_servers__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Forecast Amount --></label>
+        <name>Forecast_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Have they been forced to purchase bandwidth/storage based on the amount of files they store? --></help>
+        <label><!-- Foreced to purchase bandwidth --></label>
+        <name>Foreced_to_purchase_bandwidth__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Functionality of the site/environment? --></label>
+        <name>Functionality_of_the_site_environment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has account done prepays in the past? --></label>
+        <name>Has_account_done_prepays_in_the_past__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If NO, then this must be done before the platform team is engaged. --></help>
+        <label><!-- Has an SE qualified acct  for platform? --></label>
+        <name>Has_an_SE_qualified_acct_for_platform__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- please use custom link to access LEGAL&apos;s support page. --></help>
+        <label><!-- LEGAL --></label>
+        <name>LEGAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- This the date the account went online. --></help>
+        <label><!-- Online Date --></label>
+        <name>Online_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+        <relationshipLabel><!-- Churn Prevention Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Owner Role --></label>
+        <name>Owner_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managed Colocation --></label>
+        <name>PLATFORM__c</name>
+    </fields>
+    <fields>
+        <help><!-- This information comes via eConnect and is read only to others. --></help>
+        <label><!-- Payment History --></label>
+        <name>PaymentHistory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter your response to Platform. --></help>
+        <label><!-- Managed Colocation AM Response --></label>
+        <name>Platform_AM_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managed Colocation Response --></label>
+        <name>Platform_Response__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please detail the results of your churn prevention strategy. --></help>
+        <label><!-- Resolution --></label>
+        <name>Prevention_Results__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter your strategy to deter the churn. --></help>
+        <label><!-- Prevention Strategy --></label>
+        <name>Prevention_Strategy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous prepay amount --></label>
+        <name>Previous_prepay_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing for decommissioned devices? --></label>
+        <name>Pricing_for_decommissioned_devices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing for devices being added --></label>
+        <name>Pricing_for_devices_being_added__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the MRR in the pricing tool match the invoice? --></help>
+        <label><!-- Pricing tool match invoice? --></label>
+        <name>Pricing_tool_match_invoice__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What is the due date for a proposal to the customer (Minimum 2 days lead time)? --></help>
+        <label><!-- Proposal due date to customer --></label>
+        <name>Proposal_due_date_to_customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rack Law Ticket # --></label>
+        <name>Rack_Law_Ticket__c</name>
+    </fields>
+    <fields>
+        <label><!-- Results --></label>
+        <name>Results__c</name>
+    </fields>
+    <fields>
+        <help><!-- SE name that approved account for Platform. --></help>
+        <label><!-- SE Name --></label>
+        <name>SE_Name__c</name>
+        <relationshipLabel><!-- Churn Prevention Plan (SE Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please select the segment you need pricing for. --></help>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+        <picklistValues>
+            <masterLabel>Intensive</masterLabel>
+            <translation><!-- Intensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managed</masterLabel>
+            <translation><!-- Managed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform</masterLabel>
+            <translation><!-- Platform --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Significant web server customization? --></label>
+        <name>Significant_web_server_customization__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This information comes via eConnect and is read only to others. --></help>
+        <label><!-- Special Payment Terms --></label>
+        <name>SpecialPaymentTerms__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is there a custom SLA, MSA, out clause etc… --></help>
+        <label><!-- Special deal details --></label>
+        <name>Special_deal_details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Have we made any special deals with the customer (custom SLA, special pricing, etc.) --></help>
+        <label><!-- Special deals with customer? --></label>
+        <name>Special_deals_with_customer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Ticket number where the issue was worked.  Please use 090429-05412 format.  Do not include # or any other characters. --></help>
+        <label><!-- Ticket Number --></label>
+        <name>Ticket_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- At the time of this decommission will the customer be under contract? --></help>
+        <label><!-- Under Contract? --></label>
+        <name>Under_Contract__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VIRTULIZATION --></label>
+        <name>VIRTULIZATION__c</name>
+    </fields>
+    <fields>
+        <help><!-- If customization is &quot;YES&quot; please provide customization details for the web server. --></help>
+        <label><!-- Web Server Customization Details --></label>
+        <name>Web_Server_Customization_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- What are the compliance needs? --></label>
+        <name>What_are_the_compliance_needs__c</name>
+    </fields>
+    <fields>
+        <label><!-- What database platform is used? --></label>
+        <name>What_database_platform_is_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- What is the accounts AR status? --></label>
+        <name>What_is_the_accounts_AR_status__c</name>
+        <picklistValues>
+            <masterLabel>120 days</masterLabel>
+            <translation><!-- 120 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 days</masterLabel>
+            <translation><!-- 60 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 days</masterLabel>
+            <translation><!-- 90 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What programming language being used? --></label>
+        <name>What_programming_language_being_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- What programming libraries are used? --></label>
+        <name>What_programming_libraries_are_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- What&apos;s the exact configuration? --></label>
+        <name>What_s_the_exact_configuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- What should be their monthly fee? --></label>
+        <name>What_should_be_their_monthly_fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- When did they pay? --></label>
+        <name>When_did_they_pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- When will it end? --></label>
+        <name>When_will_it_end__c</name>
+    </fields>
+    <fields>
+        <label><!-- Why is this customer a churn risk? --></label>
+        <name>Why_is_this_customer_a_churn_risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional segment pricing requested? --></label>
+        <name>Would_customer_like_pricing__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This information comes via eConnect and is read only to others. --></help>
+        <label><!-- Contract Status --></label>
+        <name>contractstatus__c</name>
+    </fields>
+    <layouts>
+        <layout>Churn Prevention Plan Layout</layout>
+        <sections>
+            <label><!-- Accounts Receivable (check items needed from A/R) --></label>
+            <section>Accounts Receivable (check items needed from A/R)</section>
+        </sections>
+        <sections>
+            <label><!-- Cloud --></label>
+            <section>Cloud</section>
+        </sections>
+        <sections>
+            <label><!-- Competitor Information --></label>
+            <section>Competitor Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance --></label>
+            <section>Finance</section>
+        </sections>
+        <sections>
+            <label><!-- General Account &amp; Opportunity Information --></label>
+            <section>General Account &amp; Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Legal --></label>
+            <section>Legal</section>
+        </sections>
+        <sections>
+            <label><!-- Managed Colocation --></label>
+            <section>Managed Colocation</section>
+        </sections>
+        <sections>
+            <label><!-- Prevention Plan Information --></label>
+            <section>Prevention Plan Information</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Details --></label>
+            <section>Resolution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Support Departments (check departments you&apos;ll need support from) --></label>
+            <section>Support Departments (check departments you&apos;ll need support from)</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Virtulization --></label>
+            <section>Virtulization</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- All fields in the CLOUD section are required when CLOUD is checked. --></errorMessage>
+        <name>Cloud_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Devices being added = Yes then What &apos;s the exact configuration and Pricing for devices being added are required. --></errorMessage>
+        <name>Devices_being_added_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Devices being commissioned = Yes then Decommissioned Devices and Pricing for decommissioned devices are required. --></errorMessage>
+        <name>Devices_being_decommissioned_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All fields on the left side in the FINANCE section are required when FINANCE is checked. --></errorMessage>
+        <name>Finance_all_are_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Has account done prepays in the past = Yes then you must populate Previous Prepay Amount, When did they pay, When will it end, and What should be their monthly fee. --></errorMessage>
+        <name>Has_account_done_prepays_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All fields in the LEGAL section are required when LEGAL is checked. --></errorMessage>
+        <name>Legal_all_are_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All fields in the PLATFORM section are required when PLATFORM is checked. --></errorMessage>
+        <name>Platform_all_are_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Explain MRR and Invoice Difference is required when the Pricing Tool Match Invoice is No. --></errorMessage>
+        <name>Pricing_Tool_Match_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- A_R_Request --></label>
+        <name>A_R_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Rack_Law --></label>
+        <name>Rack_Law</name>
+    </webLinks>
+</CustomObjectTranslation>

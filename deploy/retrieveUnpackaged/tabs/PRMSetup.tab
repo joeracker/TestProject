@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>600</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>PRM Setup</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom24: Building</motif>
+    <url>https://apps.salesforce.com/prm/setup?url={!API.Partner_Server_URL_80}&amp;sid={!API.Session_ID}</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

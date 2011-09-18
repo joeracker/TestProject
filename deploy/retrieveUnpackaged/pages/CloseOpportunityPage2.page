@@ -1,0 +1,139 @@
+<apex:page standardController="Opportunity" extensions="CloseOpportunityWizard" title="Close Opportunity Wizard" action="{!fetchContactObjects}">
+<apex:form id="AccountForm" title="Close Opportunity Wizard">
+    <apex:pageBlock title="Close Opportunity Wizard (step {!currentStep} of {!lastPage})" >
+        <apex:pageBlockButtons location="bottom">
+        	<apex:commandButton id="Prior" value="Prior Page" action="{!priorPage}" immediate="true" />
+            <apex:commandButton id="SaveAndNext" value="Save & Next" action="{!SaveAndNext}" rendered="{!NOT(editMode)}" />
+            <apex:commandButton id="Cancel" value="Cancel" action="{!Cancel}" />
+        </apex:pageBlockButtons>
+
+        <apex:pageMessages />
+        <apex:pageBlockSection title="Account Information" columns="2">
+            <apex:outputField id="AccountName" value="{!currentAccount.Name}"/>
+            <apex:outputField id="AccountNum" value="{!currentAccount.CORE_Account_number__c}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Opportunity Information" columns="2">
+            <apex:outputField id="OpptyName" value="{!currentOppty.Name}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection id="Contacts" title="Contact Information" columns="1">
+                <apex:outputPanel >
+                    <apex:commandButton id="AddContactWithRole" value="Add New Contact with Role" action="{!addNewContactWithRole}" />
+                    <apex:outputLabel > </apex:outputLabel>                    
+                    <apex:commandButton id="AddContactRole" value="Add New Contact Role" action="{!addNewContactRole}"/>
+                    <apex:commandButton id="RefreshList" value="Refresh List" action="{!refetchContactObjects}" reRender="ContactList" />                    
+                </apex:outputPanel>
+                <apex:pageBlockTable id="ContactList" title="Contacts" value="{!accountContactRoles}" var="contactRoleWrapper">
+                    <apex:column headerValue="Action">
+                        <apex:commandLink action="{!makeContactRoleEditable}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}">
+                            <apex:param name="selectedContactRole" assignTo="{!selectedAccountContactRoleId}" value="{!contactRoleWrapper.contactRole.Id}" />
+                            <nobr>Edit</nobr>
+                        </apex:commandLink>
+                        <apex:outputText value=" | " rendered="{!NOT(contactRoleWrapper.IsEditMode)}" />
+						<apex:commandLink action="{!deleteContactRole}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}">
+                            <apex:param name="selectedContactRole" assignTo="{!selectedAccountContactRoleId}" value="{!contactRoleWrapper.contactRole.Id}" />
+                            <nobr>Del</nobr>
+                        </apex:commandLink>                                                                
+                        <apex:commandLink action="{!saveContactRole}" rendered="{!contactRoleWrapper.IsEditMode}">
+                            <apex:param name="selectedContactRole" assignTo="{!selectedAccountContactRoleId}" value="{!contactRoleWrapper.contactRole.Id}" />
+                            <nobr>Save</nobr>
+                        </apex:commandLink>
+                        <apex:outputText value=" | " rendered="{!contactRoleWrapper.IsEditMode}" /> 
+                        <apex:commandLink action="{!cancelContactRoleEdit}" immediate="true" rendered="{!contactRoleWrapper.IsEditMode}">
+                            <apex:param name="selectedContactRole" assignTo="{!selectedAccountContactRoleId}" value="cancel" />
+                            <nobr>Cancel</nobr>
+                        </apex:commandLink>
+                    </apex:column>                    
+                    <apex:column headerValue="Name">                
+                        <apex:inputField value="{!contactRoleWrapper.contactRole.Rackspace_Contact__c}" rendered="{!contactRoleWrapper.useExistingContact}" required="true"/>
+                        
+                        <apex:outputLabel value="First Name" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" />                        
+                        <div class="requiredInput">
+                        <div class="requiredBlock"></div>                        
+                        <apex:inputText value="{!contactRoleWrapper.Rackspace_Contact.FirstName}" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" required="true"/>
+                        </div>                   
+                        
+                        <apex:outputLabel value="Last Name" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" />                        
+                        <div class="requiredInput">
+                        <div class="requiredBlock"></div>                      
+                        <apex:inputText value="{!contactRoleWrapper.Rackspace_Contact.LastName}" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" required="true"/>
+                        </div>
+                        
+                        <a href="/{!contactRoleWrapper.Rackspace_Contact.Id}" target="newWindow">
+                        <apex:outputText value="{!contactRoleWrapper.Rackspace_Contact.FirstName} {!contactRoleWrapper.Rackspace_Contact.LastName}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}"/>
+                        </a>
+                    </apex:column>
+                    <apex:column headerValue="Phone" >
+                        <div class="requiredInput">
+                        <div class="requiredBlock"></div>                      
+                        <apex:inputText value="{!contactRoleWrapper.Rackspace_Contact.Phone}" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" required="true"/>
+                        </div>
+                        <apex:outputText value="{!contactRoleWrapper.Rackspace_Contact.Phone}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}" />
+                    </apex:column>
+                     <apex:column headerValue="Email" >
+                        <div class="requiredInput">
+                        <div class="requiredBlock"></div>                                              
+                        <apex:inputText value="{!contactRoleWrapper.Rackspace_Contact.Email}" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" required="true"/>
+                        </div>
+                        <apex:outputText value="{!contactRoleWrapper.Rackspace_Contact.Email}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}" />
+                    </apex:column>
+                     <apex:column headerValue="Role" >
+                        <apex:inputField value="{!contactRoleWrapper.contactRole.Role__c}" rendered="{!contactRoleWrapper.IsEditMode}" required="true"/>
+                        <apex:outputField value="{!contactRoleWrapper.contactRole.Role__c}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}" />
+                    </apex:column>
+                    <apex:column >
+                    	<apex:facet name="header">
+                    		Primary<BR/>Decision<BR/>Maker
+                    	</apex:facet>                   
+                        <apex:inputField value="{!contactRoleWrapper.contactRole.Primary_Decision_Maker__c}" rendered="{!contactRoleWrapper.IsEditMode}" />
+                        <apex:outputField value="{!contactRoleWrapper.contactRole.Primary_Decision_Maker__c}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}" />
+                    </apex:column>
+                    <apex:column >
+                    	<apex:facet name="header">
+                    		Ticket<BR/>Notify
+                    	</apex:facet>
+                        <apex:inputField value="{!contactRoleWrapper.contactRole.Ticket_Notify__c}" rendered="{!contactRoleWrapper.IsEditMode}" />
+                        <apex:outputField value="{!contactRoleWrapper.contactRole.Ticket_Notify__c}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}" />
+                    </apex:column>
+                    <apex:column headerValue="Mailing Address" >                        
+                        <!-- apex:outputPanel rendered="{!NOT(contactRoleWrapper.IsEditMode)}" >
+                        	<a href="/servlet/servlet.Integration?scontrolCaching=1&lid=00b50000000xF76&eid={!contactRoleWrapper.contactRole.Rackspace_Contact__c}&ic=1" target="newWindow">Edit Addr</a>  
+                        </apex:outputPanel -->
+                                              
+                        <!-- apex:commandLink action="{!editAddress}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}" target="_blank">
+                            <apex:param name="selectedContact" assignTo="{!selectedContactId}" value="{!contactRoleWrapper.contactRole.Rackspace_Contact__c}" />
+                            <nobr>Edit Address </nobr>
+                        </apex:commandLink>                         
+                        <!-- 
+                        <apex:outputLabel value="Street" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" />
+                        <apex:inputField value="{!contactRoleWrapper.Rackspace_Contact.MailingStreet}" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" required="{IF(contactRoleWrapper.contactRole.Role__c = 'Primary Contact'),true,false}" />
+                        <apex:outputText rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" ><br/></apex:outputText>
+                        
+                        <apex:outputLabel value="City" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" />
+                        <apex:inputField value="{!contactRoleWrapper.Rackspace_Contact.MailingCity}" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" />
+                        <apex:outputText rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" ><br/></apex:outputText>
+                        
+                        <apex:outputLabel value="State" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" />
+                        <apex:inputField value="{!contactRoleWrapper.Rackspace_Contact.MailingState}" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" />
+                        <apex:outputText rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" ><br/></apex:outputText>
+                         
+                        <apex:outputLabel value="Postal Code" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" />
+                        <apex:inputField value="{!contactRoleWrapper.Rackspace_Contact.MailingPostalCode}" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" />
+                        <apex:outputText rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" ><br/></apex:outputText>
+                         
+                        <apex:outputLabel value="Country" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" />
+                        <apex:inputField value="{!contactRoleWrapper.Rackspace_Contact.MailingCountry}" rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" />
+                        <apex:outputText rendered="{!AND(contactRoleWrapper.IsEditMode,NOT(contactRoleWrapper.useExistingContact))}" ><br/></apex:outputText> 
+                        -->                       
+                        <apex:outputLabel value="{!contactRoleWrapper.Rackspace_Contact.MailingStreet}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}"/>
+                        <apex:outputLabel value=", " rendered="{!AND(NOT(contactRoleWrapper.IsEditMode),NOT(ISBLANK(contactRoleWrapper.Rackspace_Contact.MailingCity)))}"/>
+                        <apex:outputLabel value="{!contactRoleWrapper.Rackspace_Contact.MailingCity}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}"/>
+                        <apex:outputLabel value=", " rendered="{!AND(NOT(contactRoleWrapper.IsEditMode),NOT(ISBLANK(contactRoleWrapper.Rackspace_Contact.MailingState)))}"/>
+                        <apex:outputLabel value="{!contactRoleWrapper.Rackspace_Contact.MailingState}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}"/>
+                        <apex:outputLabel value="{!contactRoleWrapper.Rackspace_Contact.MailingPostalCode}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}"/>
+                        <apex:outputLabel value=" {!contactRoleWrapper.Rackspace_Contact.MailingCountry}" rendered="{!NOT(contactRoleWrapper.IsEditMode)}"/>
+                    </apex:column>                                     
+                </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Class</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Classes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approval Required --></label>
+        <name>Approval_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>Class_Name__c</name>
+        <picklistValues>
+            <masterLabel>21100: All Classes (Sales)</masterLabel>
+            <translation><!-- 21100: All Classes (Sales) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21111: Login &amp; Home Page</masterLabel>
+            <translation><!-- 21111: Login &amp; Home Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21121: Leads</masterLabel>
+            <translation><!-- 21121: Leads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21131: Account &amp; Contacts</masterLabel>
+            <translation><!-- 21131: Account &amp; Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21141: Opportunities</masterLabel>
+            <translation><!-- 21141: Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21151: Reports &amp; Dashboards</masterLabel>
+            <translation><!-- 21151: Reports &amp; Dashboards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21161: Forecasting</masterLabel>
+            <translation><!-- 21161: Forecasting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23100: All Classes (Support)</masterLabel>
+            <translation><!-- 23100: All Classes (Support) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23111:  Login &amp; Home page</masterLabel>
+            <translation><!-- 23111:  Login &amp; Home page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23121: Accounts</masterLabel>
+            <translation><!-- 23121: Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23131: Contacts</masterLabel>
+            <translation><!-- 23131: Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23141: Opportunities</masterLabel>
+            <translation><!-- 23141: Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23151: Forecasting</masterLabel>
+            <translation><!-- 23151: Forecasting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23161: Standard Customer Calls</masterLabel>
+            <translation><!-- 23161: Standard Customer Calls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23171: Server Build</masterLabel>
+            <translation><!-- 23171: Server Build --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23181: Technical Overview</masterLabel>
+            <translation><!-- 23181: Technical Overview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23191: Reporting, Dashboards &amp; Console</masterLabel>
+            <translation><!-- 23191: Reporting, Dashboards &amp; Console --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Class Type --></label>
+        <name>Class_Type__c</name>
+        <picklistValues>
+            <masterLabel>CBT</masterLabel>
+            <translation><!-- CBT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instructor Lead</masterLabel>
+            <translation><!-- Instructor Lead --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Offered --></label>
+        <name>Date_Offered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <picklistValues>
+            <masterLabel>MailTrust</masterLabel>
+            <translation><!-- MailTrust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform</masterLabel>
+            <translation><!-- Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation><!-- Support --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility --></label>
+        <name>Facility__c</name>
+        <picklistValues>
+            <masterLabel>Austin</masterLabel>
+            <translation><!-- Austin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Datapoint</masterLabel>
+            <translation><!-- Datapoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Castle</masterLabel>
+            <translation><!-- The Castle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation><!-- UK --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inactive --></label>
+        <name>Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instructor --></label>
+        <name>Instructor__c</name>
+        <relationshipLabel><!-- Classes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Max Capacity --></label>
+        <name>Max_Capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Enrolled --></label>
+        <name>Number_Enrolled__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the last date to register for the even. --></help>
+        <label><!-- RSVP Date --></label>
+        <name>RSVP_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Meeting Link --></label>
+        <name>Web_Meeting_Link__c</name>
+    </fields>
+    <layouts>
+        <layout>Class Layout</layout>
+        <sections>
+            <label><!-- Class Description --></label>
+            <section>Class Description</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

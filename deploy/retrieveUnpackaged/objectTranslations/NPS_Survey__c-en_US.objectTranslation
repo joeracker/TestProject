@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NPS Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NPS Surveys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Num --></label>
+        <name>Account_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- NPS Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used in response to an NPS survey result. --></help>
+        <label><!-- Action Plan --></label>
+        <name>Action_Plan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the date you anticipate your follow ups being completed. --></help>
+        <label><!-- Anticipated Completion Date --></label>
+        <name>Anticipated_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- BDCs email address so they receive NPS notification. --></help>
+        <label><!-- BDC Email --></label>
+        <name>BDC_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- NPS Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Detractor Comments Hidden --></label>
+        <name>Detractor_Comments_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click on the link to take you to the data warehouse record for this result. --></help>
+        <label><!-- Link to Results --></label>
+        <name>Link_to_Results__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Email --></label>
+        <name>Manager_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter your notes from the first month follow up. --></help>
+        <label><!-- Month 1 Follow Up --></label>
+        <name>Month_1_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter your notes from the second month follow up. --></help>
+        <label><!-- Month 2 Follow Up --></label>
+        <name>Month_2_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter your notes from the third month follow up. --></help>
+        <label><!-- Month 3 Follow Up --></label>
+        <name>Month_3_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter your notes from the fourth month follow up. --></help>
+        <label><!-- Month 4 Follow Up --></label>
+        <name>Month_4_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter your notes from the fifth month follow up. --></help>
+        <label><!-- Month 5 Follow Up --></label>
+        <name>Month_5_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter your notes from the sixth month follow up. --></help>
+        <label><!-- Month 6 Follow Up --></label>
+        <name>Month_6_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for CI integration --></help>
+        <label><!-- NPS Production Id --></label>
+        <name>NPS_Production_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Recommendation Hidden --></label>
+        <name>Overall_Recommendation_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Recommendation --></label>
+        <name>Overall_Recommendation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Role --></label>
+        <name>Owner_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Passive Comments Hidden --></label>
+        <name>Passive_Comments_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promoter Comments Hidden --></label>
+        <name>Promoter_Comments_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Comments --></label>
+        <name>Survey_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date that the survey was completed on. --></help>
+        <label><!-- Survey Completion Date --></label>
+        <name>Survey_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please copy and paste into the address bar of your browser.  Normal text fields can only be 255 characters and the new URL is longer in most cases. --></help>
+        <label><!-- Survey Link in DW --></label>
+        <name>Survey_Link_in_DW__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click on the Create CORE Ticket button (appears while in non-edit mode).  DO NOT MANUALLY CHECK THIS BOX. This will check the box and let CORE know to create a ticket.  When the ticket is created CORE will update the Ticket Number and Ticket Status field. --></help>
+        <label><!-- Ticket Created --></label>
+        <name>Ticket_Created__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the Ticket has been submitted and/or if it has been returned by CORE.  DO NOT MANUALLY UPDATE THIS FIELD. --></help>
+        <label><!-- Ticket Creation Status --></label>
+        <name>Ticket_Creation_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the ticket number from CORE.  CORE will populate this field when the ticket has been created. --></help>
+        <label><!-- Ticket Number --></label>
+        <name>Ticket_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- This the current status of the ticket for the NPS Survey.  CORE will populate the Status. --></help>
+        <label><!-- Ticket Status --></label>
+        <name>Ticket_Status__c</name>
+    </fields>
+    <layouts>
+        <layout>NPS Survey Layout</layout>
+        <sections>
+            <label><!-- Action Plan --></label>
+            <section>Action Plan</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Information --></label>
+            <section>Survey Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Survey Name.  This will cause reporting issues. --></errorMessage>
+        <name>Cannot_update_Survey_Name</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Created_CORE_Ticket --></label>
+        <name>Created_CORE_Ticket</name>
+    </webLinks>
+    <workflowTasks>
+        <description><!-- You have received this email because your customer has submitted a Net Promoter Survey with a Likelihood to Recommend score of 6 or below. --></description>
+        <name>NPSNegativeAlertTask</name>
+        <subject><!-- NPS Negative Alert Task --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- You have received this email because your customer has submitted a Net Promoter Survey with a Likelihood to Recommend score of 9 or 10. --></description>
+        <name>NPSPositiveCustomerAlert</name>
+        <subject><!-- NPS: Positive Customer Alert --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- You have received this email because your customer has submitted a Net Promoter Survey with a Likelihood to Recommend score of 7 or 8. --></description>
+        <name>NeutralCustomerAlert</name>
+        <subject><!-- Neutral Customer Alert --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Used to send task to partner sales rep for follow up on a detractor --></description>
+        <name>Partner_Detractor_Follow_Up</name>
+        <subject><!-- Partner Detractor Follow Up --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Used to send task to partner sales rep for follow up on a passive --></description>
+        <name>Partner_Passive_Follow_Up</name>
+        <subject><!-- Partner Passive Follow Up --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Coaching Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Coaching Logs</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please select the type of activity to be performed. --></help>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type__c</name>
+        <picklistValues>
+            <masterLabel>1x1</masterLabel>
+            <translation><!-- 1x1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Monitoring</masterLabel>
+            <translation><!-- Call Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chat Monitoring</masterLabel>
+            <translation><!-- Chat Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feedback</masterLabel>
+            <translation><!-- Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side by side</masterLabel>
+            <translation><!-- Side by side --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This date is automatically populated when the log is saved as completed. --></help>
+        <label><!-- Completed Date --></label>
+        <name>Completed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter a duration when you have completed your coaching. --></help>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the rep who this coaching log is with. --></help>
+        <label><!-- Manager --></label>
+        <name>Manager__c</name>
+        <relationshipLabel><!-- Coaching Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please enter the notes from your coaching session. --></help>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select a status.  When completed is selected the completed date will populate and the duration will become required. The rep and owner (manager) will receive email notification of the completion. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must enter a duration before saving with a status of completed. --></errorMessage>
+        <name>Must_insert_duration_when_completing</name>
+    </validationRules>
+</CustomObjectTranslation>

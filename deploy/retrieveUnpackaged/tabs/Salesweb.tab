@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Rackspacesales.com</description>
+    <frameHeight>600</frameHeight>
+    <hasSidebar>true</hasSidebar>
+    <label>Salesweb</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom20: Airplane</motif>
+    <url>http://www.rackspacesales.com</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

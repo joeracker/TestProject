@@ -1,0 +1,42 @@
+<apex:page standardController="Opportunity" extensions="CloseOpportunityWizard" title="Close Opportunity Wizard" action="{!fetchContactObjects}">
+<apex:form id="AccountForm" title="Close Opportunity Wizard">
+
+
+    <apex:pageBlock title="Close Opportunity Wizard (step {!currentStep} of {!lastPage})" >
+        
+        <apex:pageBlockButtons location="bottom">
+            <!-- apex:commandButton id="CloseAndConfirm" value="Confirm & Close" action="{!SaveAndNext}" target="_blank" / -->
+            <apex:commandButton id="Prior" value="Prior Page" action="{!priorPage}" immediate="true" />
+            <apex:commandButton id="Cancel" value="Cancel" action="{!Cancel}" />
+            <apex:commandButton id="ReturntoOppty" value="Return to Opportunity" action="{!Cancel}" />
+        </apex:pageBlockButtons>
+        <apex:pageMessages />
+        <apex:pageBlockSection title="Account Information" columns="2">
+            <apex:outputField id="AccountName" value="{!currentAccount.Name}"/>
+            <apex:outputField id="AccountNum" value="{!currentAccount.CORE_Account_number__c}"/>
+        </apex:pageBlockSection> 
+        
+        <apex:pageBlockSection title="Primary Contact Information" columns="2" rendered="{!IF(currentPrimaryContactRole == null,false,true)}" >
+            <apex:outputField id="ContactFirst" value="{!currentPrimaryContactRole.Rackspace_Contact.FirstName}"/>
+            <apex:outputField id="ContactLast" value="{!currentPrimaryContactRole.Rackspace_Contact.LastName}"/>
+            <apex:outputField id="ContactPhone" value="{!currentPrimaryContactRole.Rackspace_Contact.Phone}"/>
+            <apex:outputField id="ContactEmail" value="{!currentPrimaryContactRole.Rackspace_Contact.Email}"/>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection title="Opportunity Information" columns="2">
+            <apex:outputField id="OpptyName" value="{!currentOppty.Name}"/>
+            <apex:outputField id="OpptyStage" value="{!currentOppty.StageName}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection columns="3">
+            <apex:outputLabel />
+            <apex:commandLink id="CloseAndConfirmBottom" value="Confirm & Close" action="{!SaveAndNext}" target="_blank"/>
+            <apex:outputLink id="EConnectDocuments" value="https://econnect.rackspace.com/attachment/sfdc_list" target="_blank" >EConnect Documents
+                <apex:param name="opportunity_number" value="{!currentOppty.Opportunity_ID__c}" />
+                <!-- Current User's SSO_Username__c if you want this to be the Oppty Owner Username call me -->
+                <apex:param name="cuser" value="{!$User.SSO_Username__c}" />
+            </apex:outputLink>          
+            <apex:outputLabel />
+        </apex:pageBlockSection>        
+    </apex:pageBlock>
+</apex:form>
+</apex:page>
