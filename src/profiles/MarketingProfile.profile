@@ -895,6 +895,11 @@
     </fieldLevelSecurities>
     <fieldLevelSecurities>
         <editable>false</editable>
+        <field>Merchandise__c.Sale_Price__c</field>
+        <hidden>true</hidden>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>false</editable>
         <field>Merchandise__c.Stock_Price__c</field>
         <hidden>true</hidden>
     </fieldLevelSecurities>
