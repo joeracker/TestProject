@@ -63,6 +63,22 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Days_Open__c</fullName>
+        <description>The number of days a position has been (or was) open.</description>
+        <externalId>false</externalId>
+        <formula>If(isNull(Close_Date__c),
+TODAY() - Open_Date__c,
+Close_Date__c - Open_Date__c)</formula>
+        <inlineHelpText>RTFM!</inlineHelpText>
+        <label>Days Open</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Educational_Requirements__c</fullName>
         <externalId>false</externalId>
         <label>Educational Requirements</label>
@@ -139,6 +155,137 @@
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Job_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Level</label>
+        <picklist>
+            <controllingField>Functional_Area__c</controllingField>
+            <picklistValues>
+                <fullName>FN-100</fullName>
+                <controllingFieldValues>Finance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FN-200</fullName>
+                <controllingFieldValues>Finance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FN-300</fullName>
+                <controllingFieldValues>Finance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FN-400</fullName>
+                <controllingFieldValues>Finance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HR-100</fullName>
+                <controllingFieldValues>Human Resources</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HR-200</fullName>
+                <controllingFieldValues>Human Resources</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HR-300</fullName>
+                <controllingFieldValues>Human Resources</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HR-400</fullName>
+                <controllingFieldValues>Human Resources</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT-100</fullName>
+                <controllingFieldValues>Information Technology</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT-200</fullName>
+                <controllingFieldValues>Information Technology</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT-300</fullName>
+                <controllingFieldValues>Information Technology</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT-400</fullName>
+                <controllingFieldValues>Information Technology</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MC-100</fullName>
+                <controllingFieldValues>Misc.</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MC-200</fullName>
+                <controllingFieldValues>Misc.</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MC-300</fullName>
+                <controllingFieldValues>Misc.</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MC-400</fullName>
+                <controllingFieldValues>Misc.</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RO-100</fullName>
+                <controllingFieldValues>Retail Operations</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RO-200</fullName>
+                <controllingFieldValues>Retail Operations</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RO-300</fullName>
+                <controllingFieldValues>Retail Operations</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RO-400</fullName>
+                <controllingFieldValues>Retail Operations</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WH-100</fullName>
+                <controllingFieldValues>Warehousing</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WH-200</fullName>
+                <controllingFieldValues>Warehousing</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WH-300</fullName>
+                <controllingFieldValues>Warehousing</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WH-400</fullName>
+                <controllingFieldValues>Warehousing</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Location__c</fullName>
@@ -310,4 +457,20 @@
     <pluralLabel>Positions</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Close_Date_Rule</fullName>
+        <active>true</active>
+        <description>Close Date must be specified when Status is set to &apos;Closed - Filled&apos; or &apos;Closed - Not Approved.&apos;</description>
+        <errorConditionFormula>ISBLANK(Close_Date__c) &amp;&amp; (ISPICKVAL(Status__c , &quot;Closed - Filled&quot;) ||
+ISPICKVAL(Status__c , &quot;Closed - Not Approved&quot;))</errorConditionFormula>
+        <errorDisplayField>Close_Date__c</errorDisplayField>
+        <errorMessage>Close Date must be specified when Status is set to &apos;Closed&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Min_Pay_Rule</fullName>
+        <active>true</active>
+        <description>Min pay should never exceed max.</description>
+        <errorConditionFormula>Min_Pay__c &gt;  Max_Pay__c</errorConditionFormula>
+        <errorMessage>Min pay cannot exceed max.</errorMessage>
+    </validationRules>
 </CustomObject>
