@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
-    <body>We are currently undergoing minor maintenance and apologize for any inconvenience. During this maintenance, you will not be able to view your opportunities. Please contact your Channel Account Manager with any questions. &lt;IFRAME id=itarget height=345 src=&quot;/apex/PartnerPortalWelcomeUS&quot; frameBorder=0 width=&quot;100%&quot; scrolling=no&gt;&lt;/IFRAME&gt;</body>
-    <pageComponentType>htmlArea</pageComponentType>
-    <width>wide</width>
-</HomePageComponent>

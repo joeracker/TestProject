@@ -1,110 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>XMLDom</members>
-        <members>startHereController</members>
+        <members>*</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>Start_Here</members>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>ApexPage</name>
     </types>
     <types>
-        <members>Force_com</members>
-        <members>Recruiting</members>
-        <members>Warehouse</members>
-        <name>CustomApplication</name>
+        <members>*</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
-        <members>Account.Active__c</members>
-        <members>Account.CustomerPriority__c</members>
-        <members>Account.Industry</members>
-        <members>Account.NumberofLocations__c</members>
-        <members>Account.Ownership</members>
-        <members>Account.Rating</members>
-        <members>Account.SLAExpirationDate__c</members>
-        <members>Account.SLASerialNumber__c</members>
-        <members>Account.SLA__c</members>
-        <members>Account.Type</members>
-        <members>Account.UpsellOpportunity__c</members>
-        <members>AccountContactRole.Role</members>
-        <members>Asset.ProductFamily</members>
-        <members>Asset.Status</members>
-        <members>Campaign.Status</members>
-        <members>Campaign.Type</members>
-        <members>CampaignMember.LeadSource</members>
-        <members>CampaignMember.Salutation</members>
-        <members>CampaignMember.Status</members>
-        <members>Case.EngineeringReqNumber__c</members>
-        <members>Case.Origin</members>
-        <members>Case.PotentialLiability__c</members>
-        <members>Case.Priority</members>
-        <members>Case.Product__c</members>
-        <members>Case.Reason</members>
-        <members>Case.SLAViolation__c</members>
-        <members>Case.Status</members>
-        <members>Case.Type</members>
-        <members>CaseContactRole.Role</members>
-        <members>Contact.Languages__c</members>
-        <members>Contact.LeadSource</members>
-        <members>Contact.Level__c</members>
-        <members>Contract.Status</members>
-        <members>ContractContactRole.Role</members>
-        <members>Event.Subject</members>
-        <members>Event.Type</members>
-        <members>Idea.Categories</members>
-        <members>Idea.Status</members>
-        <members>Lead.CurrentGenerators__c</members>
-        <members>Lead.Industry</members>
-        <members>Lead.LeadSource</members>
-        <members>Lead.NumberofLocations__c</members>
-        <members>Lead.Primary__c</members>
-        <members>Lead.ProductInterest__c</members>
-        <members>Lead.Rating</members>
-        <members>Lead.SICCode__c</members>
-        <members>Lead.Status</members>
-        <members>Opportunity.CurrentGenerators__c</members>
-        <members>Opportunity.DeliveryInstallationStatus__c</members>
-        <members>Opportunity.LeadSource</members>
-        <members>Opportunity.MainCompetitors__c</members>
-        <members>Opportunity.OrderNumber__c</members>
-        <members>Opportunity.StageName</members>
-        <members>Opportunity.TrackingNumber__c</members>
-        <members>Opportunity.Type</members>
-        <members>OpportunityContactRole.Role</members>
-        <members>PartnerRole.ReverseRole</members>
-        <members>Product2.Family</members>
-        <members>Solution.Status</members>
-        <members>Task.Priority</members>
-        <members>Task.Status</members>
-        <members>Task.Subject</members>
-        <members>Task.Type</members>
-        <name>CustomField</name>
+        <members>*</members>
+        <name>ArticleType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplication</name>
     </types>
     <types>
         <members>CustomLabels</members>
         <name>CustomLabels</name>
     </types>
     <types>
-        <members>Invoice_Statement__c</members>
-        <members>Line_Item__c</members>
-        <members>Merchandise__c</members>
-        <members>Position__c</members>
+        <members>*</members>
+        <members>Account</members>
+        <members>AccountContactRole</members>
+        <members>Activity</members>
+        <members>Asset</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>Case</members>
+        <members>CaseContactRole</members>
+        <members>Contact</members>
+        <members>ContentVersion</members>
+        <members>Contract</members>
+        <members>ContractContactRole</members>
+        <members>Event</members>
+        <members>Idea</members>
+        <members>Lead</members>
+        <members>Opportunity</members>
+        <members>OpportunityContactRole</members>
+        <members>OpportunityLineItem</members>
+        <members>PartnerRole</members>
+        <members>Product2</members>
+        <members>SfoMatchHistoryItem</members>
+        <members>Site</members>
+        <members>Solution</members>
+        <members>Task</members>
+        <members>User</members>
+        <members>UserLicense</members>
         <name>CustomObject</name>
     </types>
     <types>
-        <members>Invoice_Statement__c-en_US</members>
-        <members>Line_Item__c-en_US</members>
-        <members>Merchandise__c-en_US</members>
-        <members>Position__c-en_US</members>
+        <members>*</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
-        <members>Invoice_Statement__c</members>
-        <members>Merchandise__c</members>
-        <members>Position__c</members>
-        <members>Start_Here</members>
+        <members>*</members>
+        <name>CustomPageWebLink</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>CustomTab</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DataCategoryGroup</name>
     </types>
     <types>
         <members>SiteSpecific</members>
@@ -127,107 +99,18 @@
         <members>unfiled$public/SupportSelfServiceResetPassword</members>
         <name>EmailTemplate</name>
     </types>
+
     <types>
-        <members>DE Default</members>
+        <members>*</members>
+        <name>HomePageComponent</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>HomePageLayout</name>
     </types>
     <types>
-        <members>Account-Account %28Marketing%29 Layout</members>
-        <members>Account-Account %28Sales%29 Layout</members>
-        <members>Account-Account %28Support%29 Layout</members>
-        <members>Account-Account Layout</members>
-        <members>Asset-Asset Layout</members>
-        <members>Campaign-Campaign Layout</members>
-        <members>CampaignMember-Campaign Member Page Layout</members>
-        <members>Case-Case %28Marketing%29 Layout</members>
-        <members>Case-Case %28Sales%29 Layout</members>
-        <members>Case-Case %28Support%29 Layout</members>
-        <members>Case-Case Layout</members>
-        <members>CaseClose-Close Case Layout</members>
-        <members>Contact-Contact %28Marketing%29 Layout</members>
-        <members>Contact-Contact %28Sales%29 Layout</members>
-        <members>Contact-Contact %28Support%29 Layout</members>
-        <members>Contact-Contact Layout</members>
-        <members>Contract-Contract Layout</members>
-        <members>Event-Event Layout</members>
-        <members>Idea-Idea Layout</members>
-        <members>Invoice_Statement__c-Invoice Statement Layout</members>
-        <members>Lead-Lead %28Marketing%29 Layout</members>
-        <members>Lead-Lead %28Sales%29 Layout</members>
-        <members>Lead-Lead %28Support%29 Layout</members>
-        <members>Lead-Lead Layout</members>
-        <members>Line_Item__c-Line Item Layout</members>
-        <members>Merchandise__c-Merchandise Layout</members>
-        <members>Opportunity-Opportunity %28Marketing%29 Layout</members>
-        <members>Opportunity-Opportunity %28Sales%29 Layout</members>
-        <members>Opportunity-Opportunity %28Support%29 Layout</members>
-        <members>Opportunity-Opportunity Layout</members>
-        <members>OpportunityLineItem-Opportunity Product Layout</members>
-        <members>Position__c-Position Layout</members>
-        <members>Product2-Product Layout</members>
-        <members>Solution-Solution Layout</members>
-        <members>Task-Task Layout</members>
-        <members>User-User Layout</members>
+        <members>*</members>
         <name>Layout</name>
-    </types>
-    <types>
-        <members>Account.AllAccounts</members>
-        <members>Account.MyAccounts</members>
-        <members>Account.NewLastWeek</members>
-        <members>Account.NewThisWeek</members>
-        <members>Account.PlatinumandGoldSLACustomers</members>
-        <members>Activity.AllActivities</members>
-        <members>Activity.MyActivities</members>
-        <members>Activity.TodaysTasks</members>
-        <members>Activity.UpcomingEvents</members>
-        <members>Asset.AllAssets</members>
-        <members>Campaign.AllActiveCampaigns</members>
-        <members>Campaign.MyActiveCampaigns</members>
-        <members>Case.AllClosedCases</members>
-        <members>Case.AllOpenCases</members>
-        <members>Case.InternationalEscalations</members>
-        <members>Case.InternationalPlatinumGold</members>
-        <members>Case.InternationalSilverBronze</members>
-        <members>Case.MyCases</members>
-        <members>Case.MyOpenCases</members>
-        <members>Case.PartnerRelations</members>
-        <members>Case.USEscalations</members>
-        <members>Case.USPlatinumGold</members>
-        <members>Case.USSilverBronze</members>
-        <members>Contact.AllContacts</members>
-        <members>Contact.BirthdaysThisMonth</members>
-        <members>Contact.MyContacts</members>
-        <members>Contact.NewLastWeek</members>
-        <members>Contact.NewThisWeek</members>
-        <members>Contract.AllActivatedContracts</members>
-        <members>Contract.AllContracts</members>
-        <members>Contract.AllDraftContracts</members>
-        <members>Contract.AllInApprovalContracts</members>
-        <members>Contract.MyActivatedContracts</members>
-        <members>Contract.MyDraftContracts</members>
-        <members>Contract.MyInApprovalContracts</members>
-        <members>Lead.AllOpenLeads</members>
-        <members>Lead.InternationalLeads</members>
-        <members>Lead.MyUnreadLeads</members>
-        <members>Lead.TodaysLeads</members>
-        <members>Lead.USLeads</members>
-        <members>Lead.ViewCustom1</members>
-        <members>Lead.ViewCustom2</members>
-        <members>Opportunity.AllOpportunities</members>
-        <members>Opportunity.ClosingNextMonth</members>
-        <members>Opportunity.ClosingThisMonth</members>
-        <members>Opportunity.MyOpportunities</members>
-        <members>Opportunity.NewLastWeek</members>
-        <members>Opportunity.NewThisWeek</members>
-        <members>Opportunity.Private</members>
-        <members>Opportunity.Won</members>
-        <members>Product2.AllProducts</members>
-        <members>Solution.AllReviewedSolutions</members>
-        <members>Solution.AllUnreviewedSolutions</members>
-        <members>User.ActiveUsers</members>
-        <members>User.AdminUsers</members>
-        <members>User.AllUsers</members>
-        <name>ListView</name>
     </types>
     <types>
         <members>Admin</members>
@@ -245,40 +128,24 @@
         <name>Profile</name>
     </types>
     <types>
-        <members>ApexDevNet</members>
+        <members>*</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>RemoteSiteSetting</name>
     </types>
     <types>
-        <members>Account.Billing</members>
-        <members>Campaign.ViewCampaignInfluenceReport</members>
-        <members>Case.UpsellCrosssellOpportunity</members>
-        <members>Opportunity.DeliveryStatus</members>
-        <name>WebLink</name>
+        <members>*</members>
+        <name>ReportType</name>
     </types>
     <types>
-        <members>Account</members>
-        <members>Asset</members>
-        <members>Campaign</members>
-        <members>CampaignMember</members>
-        <members>Case</members>
-        <members>Contact</members>
-        <members>Contract</members>
-        <members>Event</members>
-        <members>Idea</members>
-        <members>Invoice_Statement__c</members>
-        <members>Lead</members>
-        <members>Line_Item__c</members>
-        <members>Merchandise__c</members>
-        <members>Opportunity</members>
-        <members>OpportunityLineItem</members>
-        <members>Organization</members>
-        <members>Position__c</members>
-        <members>Product2</members>
-        <members>Site</members>
-        <members>Solution</members>
-        <members>Task</members>
-        <members>UserLicense</members>
+        <members>*</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>Workflow</name>
     </types>
-    <version>20.0</version>
+    <version>22.0</version>
 </Package>

@@ -18,6 +18,11 @@
         <name>Price__c</name>
     </fields>
     <fields>
+        <help><!-- Some help? --></help>
+        <label><!-- Sale Price --></label>
+        <name>Sale_Price__c</name>
+    </fields>
+    <fields>
         <label><!-- Stock Price --></label>
         <name>Stock_Price__c</name>
     </fields>
